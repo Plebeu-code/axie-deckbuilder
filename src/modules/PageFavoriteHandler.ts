@@ -1,4 +1,4 @@
-import DefaultCards from "../json/cardsAxies.json";
+import DefaultCards from "../json/cardsAxies.json.old2";
 import CurseCards from "../json/cardsCurses.json";
 import ToolCards from "../json/cardsTools.json";
 import RuneCards from "../json/cardsRunes.json";

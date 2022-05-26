@@ -7,7 +7,7 @@ import search_icon from "../assets/icon/search-icon.svg";
 //! Components
 import { CardAxie } from "../components/CardAxie";
 import { TCard } from "../types";
-import DefaultCards from "../json/cardsAxies.json";
+import DefaultCards from "../json/cardsAxies.json.old2";
 import { Footer } from "../components/Footer/Footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
@@ -140,13 +140,13 @@ class CardHandler {
 }
 
 export function HomeCard() {
-
   let [axieName, setAxieName] = useState(""),
     [axieClassName, setAxieClassName] = useState(""),
     [axieBodyPart, setAxieBodyPart] = useState(""),
     [axieEnergyCost, setAxieEnergyCost] = useState(""),
     [axieTag, setAxieTag] = useState(""),
     [listFormat, setListFormat] = useState("az");
+
   const { theme } = useContext(ThemeContext);
 
   const filteredCards = useMemo(() => {
@@ -317,12 +317,12 @@ export function HomeCard() {
               </select>
             </div>
             <div className="backgroundp2">
-              {filteredCards.map((card: TCard, cardId) => (
+              {filteredCards.map((card: TCard) => (
                 <CardAxie
-                  key={cardId}
+                  key={card.id}
                   {...{
                     ...card,
-                    cardId,
+                    cardId: card.id,
                   }}
                 />
               ))}
