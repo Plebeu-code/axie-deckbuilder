@@ -3,10 +3,10 @@
 .box-card-root {
   position: relative;
   filter: none;
-  transition: transform 0.2s ease 0s, filter 0.1s ease 0s;
   vertical-align: baseline;
   margin-right: 30px;
   height: 400px;
+  transition: transform 0.2s ease 0s, filter 0.1s ease 0s;
 
   .box-card-sub-root {
     display: inline-block;
@@ -30,6 +30,35 @@
 
       &::before {
         box-sizing: border-box;
+      }
+
+      &:hover {
+        transform: translateY(-30px);
+      }
+
+      .favorite {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+
+        transform: rotate(90deg);
+
+        position: absolute;
+        right: 0;
+        top: 40%;
+        font-size: 50px;
+        color: rgb(39, 26, 17);
+        filter: drop-shadow(rgb(255, 255, 255) 0px 0px 2px);
+        z-index: 999;
+
+        .favorite-star {
+          font-size: 27px;
+          position: absolute;
+          color: rgb(255, 216, 101);
+        }
       }
 
       .box-card-background {
@@ -259,28 +288,30 @@
         position: absolute;
         color: #fff;
         bottom: 42%;
-        left: 33%;
+        left: 10%;
         font-family: "Changa One", cursive;
         font-weight: 500;
         letter-spacing: 0.7px;
         text-align: left;
-        max-width: 60%;
+        max-width: 80%;
         width: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .card-box-img-skill {
         position: absolute;
-        width: 140px;
-        max-width: 140px;
+        width: 200px;
         display: flex;
-        justify-content: left;
-
+        justify-content: center;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 4px;
         bottom: 32%;
-        left: 32%;
+        left: 8%;
         z-index: 5;
 
         div img {
@@ -363,7 +394,7 @@
 
         .card-box-keyword-tooltip {
           position: relative;
-          color: aqua;
+          color: rgb(249, 222, 75);
           font-family: "Changa One", cursive;
 
           .card-box-keyword-description {
@@ -434,4 +465,9 @@
     $result: $result * $base;
   }
   @return $result;
+}
+
+
+.favoritede {
+  display: flex !important;
 }

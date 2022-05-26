@@ -1,0 +1,88 @@
+.container-header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2ecf6;
+  box-shadow: rgba(142, 142, 148, 0.25) 0px 20px 15px -20px inset,
+    rgba(142, 142, 148, 0.25) 0px -20px 15px -20px inset;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    cursor: pointer;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      background-color: #e2ecf6;
+      border-top: solid 3px #edf6fb;
+      border-left: solid 0px #fff;
+      box-shadow: rgb(0 0 0 / 15%) 2.4px 2.4px 3.2px;
+      border-radius: 7px;
+      height: 46px;
+      font-family: "Quantico", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: #8a8a8a;
+      list-style-type: none;
+      text-decoration: none;
+
+      a {
+        font-family: "Quantico", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: #8a8a8a;
+        list-style-type: none;
+        text-decoration: none;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+
+        &:hover {
+          color: #666767;
+        }
+      }
+
+      img {
+        margin-right: 8px;
+        height: 15px;
+      }
+    }
+
+    #select-menu {
+      a {
+        color: #e2ecf6;
+      }
+      // background: linear-gradient(
+      //   90deg,
+      //   rgb(9, 87, 243) 0%,
+      //   rgb(96, 24, 185) 100%
+      // );
+
+      background: linear-gradient(-45deg, #1962f0, #356297, #23a6d5, #5c04c2);
+      animation: gradient 15s ease-out infinite;
+
+      border: none;
+      box-shadow: rgba(40, 38, 38, 0.25) 8px 10px 5px -8px inset,
+        rgba(10, 9, 9, 0.25) 8px -10px 5px -8px inset;
+
+      background-size: 400% 400%;
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    }
+  }
+}

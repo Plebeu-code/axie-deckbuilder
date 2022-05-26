@@ -22,3 +22,86 @@ body, input, button, textarea {
   }
 
 }
+
+//! DarkMode
+
+#dark {
+  background: rgb(26 29 34) !important;
+
+  .container-responsiv {
+    .container-header {
+      background-color: rgb(15, 13, 13) !important;
+    }
+    .container-main .backgrundp1 {
+        border-top: solid 3px #101213 !important;
+        border-left: solid 3px #1c2636 !important;
+        background-color: #1c2636 !important;
+        .backgroundp2 {
+          background-color: transparent !important;
+        }
+    }
+  }
+}
+
+//? Effect Text DarkMode
+
+#dark {
+  .backgrundp1 {
+    box-shadow: rgb(44 43 43 / 35%) 5px 10px 20px;
+    .backgroundp22 {
+      .buffs-container {
+        .title-buffs {
+          h2 {
+            color: #fff;
+          }
+
+          p {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+#dark {
+  .backgrundp1 {
+    .backgroundp22 {
+      .neutral-container {
+        .neutral {
+          color: white;
+
+
+        }
+        .title-neutral {
+          h2 {
+            color: #fff;
+          }
+
+          > p {
+            color: #fff;
+          }
+        }
+      }
+      .buffs-container {
+       .buffs {
+         .itens-buffs {
+           .itens-buffs-content {
+             .itens-buffs-content-description {
+               
+              .itens-buffs-content-title {
+                h3 {
+                  color: #fff;
+                }
+              }
+              p {
+                 color: #fff;
+               }
+             }
+           }
+         }
+       }
+      }
+    }
+  }
+}

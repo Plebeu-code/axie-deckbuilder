@@ -1,28 +1,16 @@
-import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import AppWrapper from "./App";
-import "./style/global.scss";
 import { getCLS, getFID, getLCP } from "web-vitals";
-
+import "./style/global.scss";
+import App from "./App";
 
 const containers = document.getElementById("root");
 const root = createRoot(containers!);
 root.render(
-  <React.StrictMode>
-      <AppWrapper />
-  </React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
 );
-
-// const containers = document.getElementById("root");
-// const root = createRoot(containers!);
-// root.render(
-//   <React.StrictMode>
-//     <BrowserRouter>
-//       <App />
-//     </BrowserRouter>
-//   </React.StrictMode>
-// );
 
 getCLS(console.log);
 getFID(console.log);

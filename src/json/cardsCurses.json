@@ -1,0 +1,305 @@
+[
+  {
+    "name": "Blackmail",
+    "description": "Apply Taunt to your furthest Axie for 2 turns. If this is not used, put it onto the top of your draw pile. Banish.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "X",
+    "status": {
+      "healing": {
+        "healingImage": "https://www.axie.tech/images/templates/card/stats/none.png",
+        "healingAmount": "0"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/skill.png",
+        "name": "skill"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/banish.png",
+        "name": "banish"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/curse.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-blackmail-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Taunt",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Banish",
+        "keywordDescription": "None"
+      }
+    ]
+  },
+  {
+    "name": "Burn",
+    "description": "Unplayable. Ethereal. At the end of your turn, all allies take 8 damage.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "X",
+    "status": {
+      "healing": {
+        "healingImage": "https://www.axie.tech/images/templates/card/stats/none.png",
+        "healingAmount": "0"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/unplayable.png",
+        "name": "unplayable"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/ethereal.png",
+        "name": "ethereal"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/curse.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-burn-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Unplayable",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Ethereal",
+        "keywordDescription": "None"
+      }
+    ]
+  },
+  {
+    "name": "Confused",
+    "description": "Unplayable. Ethereal.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "X",
+    "status": {
+      "healing": {
+        "healingImage": "https://www.axie.tech/images/templates/card/stats/none.png",
+        "healingAmount": "0"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/unplayable.png",
+        "name": "unplayable"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/ethereal.png",
+        "name": "ethereal"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/curse.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-confused-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Unplayable",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Ethereal",
+        "keywordDescription": "None"
+      }
+    ]
+  },
+  {
+    "name": "Daze",
+    "description": "Unplayable.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "X",
+    "status": {
+      "healing": {
+        "healingImage": "https://www.axie.tech/images/templates/card/stats/none.png",
+        "healingAmount": "0"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/unplayable.png",
+        "name": "unplayable"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/curse.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-daze-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Unplayable",
+        "keywordDescription": "None"
+      }
+    ]
+  },
+  {
+    "name": "Goo",
+    "description": "Banish.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "X",
+    "status": {
+      "healing": {
+        "healingImage": "https://www.axie.tech/images/templates/card/stats/none.png",
+        "healingAmount": "0"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/banish.png",
+        "name": "banish"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/curse.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-goo-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Banish",
+        "keywordDescription": "None"
+      }
+    ]
+  },
+  {
+    "name": "Jinx",
+    "description": "Unplayable. Ethereal. At the end of your turn, your furthest Axie takes 15 damage.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "X",
+    "status": {
+      "healing": {
+        "healingImage": "https://www.axie.tech/images/templates/card/stats/none.png",
+        "healingAmount": "0"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/unplayable.png",
+        "name": "unplayable"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/ethereal.png",
+        "name": "ethereal"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/curse.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-jinx-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Unplayable",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Ethereal",
+        "keywordDescription": "None"
+      }
+    ]
+  },
+  {
+    "name": "Void",
+    "description": "Unplayable. Ethereal. When you draw 1 or more Void, lose 1 Energy.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "X",
+    "status": {
+      "healing": {
+        "healingImage": "https://www.axie.tech/images/templates/card/stats/none.png",
+        "healingAmount": "0"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/unplayable.png",
+        "name": "unplayable"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/ethereal.png",
+        "name": "ethereal"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/curse.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-void-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Unplayable",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Ethereal",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Void",
+        "keywordDescription": "None"
+      }
+    ]
+  }
+]

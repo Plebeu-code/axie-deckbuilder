@@ -1,4 +1,4 @@
-import "../../style/footer.scss";
+import "./footer.scss";
 import peixinho from "../../assets/img/axie-infinity.png";
 import logo_white from "../../assets/img/BAYZ_Logo_White.png";
 import bayz_gg from "../../assets/img/bayz.gg.png";

@@ -1,49 +1,59 @@
-import { Route, Routes, Router, useRoutes, BrowserRouter } from "react-router-dom";
-import PageCharm from "./pages/Charm";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import { HomeCard } from "./pages/HomeCard";
-// import { PageRunas } from "./pages/Runas";
-// import { PageCharm } from "./pages/Charm";
-import { NotFound } from "./pages/NotFound";
+import { PageRunas } from "./pages/PageRunas";
+import { NotFound } from "./pages/PageNotFound";
+import { PageCharm } from "./pages/PageCharm";
+import { PageCurse } from "./pages/PageCurse";
+import { PageTool } from "./pages/PageTools";
+import { PageEffects } from "./pages/PageEffects";
+import { PageFavorite } from "./pages/PageFavorite";
 
+import { useState } from "react";
 
+import { FavoritedCardsHandler } from "./modules/CardFavoriteHandler";
+import { pageFavoriteHandler } from "./modules/PageFavoriteHandler";
 
-function App() {
-  console.log('App');
-  
-  const routes = useRoutes([
-    {
-      path: '/',
-      element: <HomeCard />,
-      children: [
-        { index: true, element: <div>No page is selected</div> },
-        { path: '/*', element: <PageCharm /> },
-        { path: 'two', element: <NotFound /> },
-      ],
-    },
-  ]);
-  return routes;
-}
+import LanguageHandler from "./modules/LanguageHandler";
 
-const AppWrapper = () => {
+let themeCache: "light" | "dark" | undefined = window.localStorage.getItem(
+  "theme"
+) as any;
+
+export const ThemeContext = React.createContext(null);
+export const PageFavoriteContext = React.createContext({
+  favorites: pageFavoriteHandler.data,
+  toggleFavorites: () => {},
+});
+
+export default function App() {
+  const [theme, setTheme] = useState(themeCache);
+
+  if (!theme) setTheme("light");
+
+  function toggleStyle() {
+    setTheme(theme === "light" ? "dark" : "light");
+    localStorage.setItem("theme", theme);
+  }
+
+  if (!FavoritedCardsHandler.exists || !FavoritedCardsHandler.isValid())
+    FavoritedCardsHandler.mount();
+
   return (
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    void new LanguageHandler(),
+    (
+      <ThemeContext.Provider value={{ toggleStyle, theme }}>
+        <Routes>
+          <Route path="/" element={<HomeCard />} />
+          <Route path="/runes" element={<PageRunas />} />
+          <Route path="/charms" element={<PageCharm />} />
+          <Route path="/tools" element={<PageTool />} />
+          <Route path="/curses" element={<PageCurse />} />
+          <Route path="/effects" element={<PageEffects />} />
+          <Route path="/favorite" element={<PageFavorite />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </ThemeContext.Provider>
+    )
   );
-};
-
-export default AppWrapper;
-
-
-
-
-
-// export default function App() {
-//   console.log("App test");
-//   return (
-//     <Routes>
-//       <Route path="/" element={<HomeCard />} />
-//       <Route path="/charm" element={<PageCharm />} />
-//     </Routes>
-//   );
-// }
+}

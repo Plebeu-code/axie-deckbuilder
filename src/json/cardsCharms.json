@@ -1,0 +1,1360 @@
+[
+  {
+    "name": "Ancient Root",
+    "description": "(Enhance any card) Add Retain.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/ancient-root.png"
+    }
+  },
+  {
+    "name": "Aquatic Energy Drink S",
+    "description": "(Enhance any card) Add Ethereal. Card's base stat +10%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/aquatic-energy-drink-s.png"
+    }
+  },
+  {
+    "name": "Aquatic Talisman of Power IV",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/aquatic-talisman-power-4.png"
+    }
+  },
+  {
+    "name": "Aquatic Talisman of Power V",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/aquatic-talisman-power-5.png"
+    }
+  },
+  {
+    "name": "Aquatic Talisman of Vitality IV",
+    "description": "(Enhance any card) Axie's max HP +12",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/aquatic-talisman-vitality-4.png"
+    }
+  },
+  {
+    "name": "Aquatic Talisman of Vitality V",
+    "description": "(Enhance any card) Axie's max HP +18",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/aquatic-talisman-vitality-5.png"
+    }
+  },
+  {
+    "name": "Arid Spell",
+    "description": "(Enhance any Attack card) Attack applies Doubt for 2 turns.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/arid-spell.png"
+    }
+  },
+  {
+    "name": "Backup Disk",
+    "description": "(Enhance any card) Add Retain.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/backup-disk.png"
+    }
+  },
+  {
+    "name": "Bean's Blessing",
+    "description": "(Enhance any card) All teammates gain 2 Healing Boost.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/beans-blessing.png"
+    }
+  },
+  {
+    "name": "Beast Energy Drink M",
+    "description": "(Enhance any card) Add Banish. Card's base stat +20%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/beast-energy-drink-m.png"
+    }
+  },
+  {
+    "name": "Beast Energy Drink S",
+    "description": "(Enhance any card) Add Ethereal. Card's base stat +10%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/beast-energy-drink-s.png"
+    }
+  },
+  {
+    "name": "Beast Talisman of Power IV",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/beast-talisman-power-4.png"
+    }
+  },
+  {
+    "name": "Beast Talisman of Power V",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/beast-talisman-power-5.png"
+    }
+  },
+  {
+    "name": "Beast Talisman of Vitality IV",
+    "description": "(Enhance any card) Axie's max HP +12",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/beast-talisman-vitality-4.png"
+    }
+  },
+  {
+    "name": "Beast Talisman of Vitality V",
+    "description": "(Enhance any card) Axie's max HP +18",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/beast-talisman-vitality-5.png"
+    }
+  },
+  {
+    "name": "Bird Energy Drink S",
+    "description": "(Enhance any Abilities) Add Ethereal. Card's base stat +10%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bird-energy-drink-s.png"
+    }
+  },
+  {
+    "name": "Bird Talisman of Focus IV",
+    "description": "(Enhance Multihit Attack Ability) ATK +3",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bird-talisman-focus-4.png"
+    }
+  },
+  {
+    "name": "Bird Talisman of Focus V",
+    "description": "(Enhance Multihit Attack Ability) ATK +4",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bird-talisman-focus-5.png"
+    }
+  },
+  {
+    "name": "Bird Talisman of Power IV",
+    "description": "(Enhance Non-Multihit Attack Ability) ATK +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bird-talisman-power-4.png"
+    }
+  },
+  {
+    "name": "Bird Talisman of Power V",
+    "description": "(Enhance Non-Multihit Attack Ability) ATK +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bird-talisman-power-5.png"
+    }
+  },
+  {
+    "name": "Bubble Paste",
+    "description": "(Enhance Skill cards) All teammates gain 1 Bubble.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bubble-paste.png"
+    }
+  },
+  {
+    "name": "Bug Energy Drink M",
+    "description": "(Enhance any card) Add Banish. Card's base stat +20%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bug-energy-drink-m.png"
+    }
+  },
+  {
+    "name": "Bug Talisman of Endurance IV",
+    "description": "(Enhance a Shielding card) Shield Stat +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bug-talisman-endurance-4.png"
+    }
+  },
+  {
+    "name": "Bug Talisman of Endurance V",
+    "description": "(Enhance a Shielding card) Shield Stat +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bug-talisman-endurance-5.png"
+    }
+  },
+  {
+    "name": "Bug Talisman of Power IV",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bug-talisman-power-4.png"
+    }
+  },
+  {
+    "name": "Bug Talisman of Power V",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/bug-talisman-power-5.png"
+    }
+  },
+  {
+    "name": "Charm of Endurance I",
+    "description": "(Enhance a Shielding card) Shield Stat +2",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "1",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/endurance-1.png"
+    }
+  },
+  {
+    "name": "Charm of Endurance II",
+    "description": "(Enhance a Shielding card) Shield Stat +4",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/endurance-2.png"
+    }
+  },
+  {
+    "name": "Charm of Endurance III",
+    "description": "(Enhance a Shielding card) Shield stat +7",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/endurance-3.png"
+    }
+  },
+  {
+    "name": "Charm of Faith I",
+    "description": "(Enhance a Healing card) Heal Stat +2",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "1",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/faith-1.png"
+    }
+  },
+  {
+    "name": "Charm of Faith II",
+    "description": "(Enhance a Healing card) Heal Stat +4",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/faith-2.png"
+    }
+  },
+  {
+    "name": "Charm of Faith III",
+    "description": "(Enhance a Healing card) Heal stat +7",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/faith-3.png"
+    }
+  },
+  {
+    "name": "Charm of Focus I",
+    "description": "(Enhance a Multihit Attack card) ATK +1",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "1",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/focus-1.png"
+    }
+  },
+  {
+    "name": "Charm of Focus II",
+    "description": "(Enhance a Multihit Attack card) ATK +2",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/focus-2.png"
+    }
+  },
+  {
+    "name": "Charm of Focus III",
+    "description": "(Enhance a Multihit Attack card) ATK +3",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/focus-3.png"
+    }
+  },
+  {
+    "name": "Charm of Power I",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +2",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "1",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/power-1.png"
+    }
+  },
+  {
+    "name": "Charm of Power II",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +4",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/power-2.png"
+    }
+  },
+  {
+    "name": "Charm of Power III",
+    "description": "(Enhance a Non-Multihit attack card) ATK +7",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/power-3.png"
+    }
+  },
+  {
+    "name": "Charm of Vitality I",
+    "description": "Axie's HP +4",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "1",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/vitality-1.png"
+    }
+  },
+  {
+    "name": "Charm of Vitality II",
+    "description": "Axie's HP +8",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/vitality-2.png"
+    }
+  },
+  {
+    "name": "Charm of Vitality III",
+    "description": "(Enhance any card) Axie's HP +12",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/vitality-3.png"
+    }
+  },
+  {
+    "name": "Cursed Doll",
+    "description": "(Enhance any card) Add Retain.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/cursed-doll.png"
+    }
+  },
+  {
+    "name": "Dawn Energy Drink S",
+    "description": "(Enhance any card) Add Ethereal. Card's base stat +10%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/dawn-energy-drink-s.png"
+    }
+  },
+  {
+    "name": "Dawn Talisman of Faith IV",
+    "description": "(Enhance a Healing card) Heal Stat +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/dawn-talisman-faith-4.png"
+    }
+  },
+  {
+    "name": "Dawn Talisman of Faith V",
+    "description": "(Enhance a Healing card) Heal Stat +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/dawn-talisman-faith-5.png"
+    }
+  },
+  {
+    "name": "Dawn Talisman of Focus IV",
+    "description": "(Enhance a Multihit Attack card) ATK +3",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/dawn-talisman-focus-4.png"
+    }
+  },
+  {
+    "name": "Dawn Talisman of Focus V",
+    "description": "(Enhance a Multihit Attack card) ATK +4",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/dawn-talisman-focus-5.png"
+    }
+  },
+  {
+    "name": "Discount Coupon",
+    "description": "(Enhance any card) -1 energy cost. Card's base stat -40%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/discount-coupon.png"
+    }
+  },
+  {
+    "name": "Dusk Energy Drink M",
+    "description": "(Enhance any card) Add Banish. Card's base stat +20%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/dusk-energy-drink-m.png"
+    }
+  },
+  {
+    "name": "Dusk Talisman of Focus IV",
+    "description": "(Enhance a Multihit Attack card) ATK +3",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/dusk-talisman-focus-4.png"
+    }
+  },
+  {
+    "name": "Dusk Talisman of Focus V",
+    "description": "(Enhance a Multihit Attack card) ATK +4",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/dusk-talisman-focus-5.png"
+    }
+  },
+  {
+    "name": "Dusk Talisman of Power IV",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/dusk-talisman-power-4.png"
+    }
+  },
+  {
+    "name": "Dusk Talisman of Power V",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/dusk-talisman-power-5.png"
+    }
+  },
+  {
+    "name": "Earth Stamp",
+    "description": "(Enhance Single Target Attack Abilities) Change ability target to the frontmost one.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/earth-stamp.png"
+    }
+  },
+  {
+    "name": "Energy Drink M",
+    "description": "(Enhance any card) Add Banish. Card's base stat +20%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/energy-drink-m.png"
+    }
+  },
+  {
+    "name": "Energy Drink S",
+    "description": "(Enhance any card) Add Ethereal. Card's base stat +10%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/energy-drink-s.png"
+    }
+  },
+  {
+    "name": "Feather Fan",
+    "description": "(Enhance Attack cards) All teammates gain 1 Feather.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/feather-fan.png"
+    }
+  },
+  {
+    "name": "Flamingo Hammer",
+    "description": "(Enhance Attack Abilities) Attack applies Fragile for 2 turns.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/flamingo-hammer.png"
+    }
+  },
+  {
+    "name": "Gecko Mask",
+    "description": "(Enhance Attack cards) Taunt all Enemies for 2 turns.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/gecko-mask.png"
+    }
+  },
+  {
+    "name": "Hacker's Drive",
+    "description": "(Enhance any Attack card) Attack applies Disarmed for 2 turns to the frontmost enemy.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/hackers-drive.png"
+    }
+  },
+  {
+    "name": "Hidden Razor",
+    "description": "(Enhance an Attack card) Attacks apply Bleed for 2 turns.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/hidden-razor.png"
+    }
+  },
+  {
+    "name": "Lazy Snail",
+    "description": "(Enhance any Attack card) Attack applies Weak for 2 turns.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/lazy-snail.png"
+    }
+  },
+  {
+    "name": "Leafy Pot",
+    "description": "(Enhance Skill cards) All teammates gain 1 Leaf.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/leafy-pot.png"
+    }
+  },
+  {
+    "name": "Mask of Frenzy",
+    "description": "(Enhance Attack cards) All teammates gain 1 Rage.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/mask-of-frenzy.png"
+    }
+  },
+  {
+    "name": "Mech Talisman of Endurance IV",
+    "description": "(Enhance a Shielding card) Shield Stat +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/mech-talisman-endurance-4.png"
+    }
+  },
+  {
+    "name": "Mech Talisman of Endurance V",
+    "description": "(Enhance a Shielding card) Shield Stat +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/mech-talisman-endurance-5.png"
+    }
+  },
+  {
+    "name": "Mech Talisman of Power IV",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/mech-talisman-power-4.png"
+    }
+  },
+  {
+    "name": "Mech Talisman of Power V",
+    "description": "(Enhance a Non-Multihit Attack card) ATK +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/mech-talisman-power-5.png"
+    }
+  },
+  {
+    "name": "Moon Stamp",
+    "description": "(Enhance Single Target Attack Abilities) Change ability target to the second frontmost one.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/moon-stamp.png"
+    }
+  },
+  {
+    "name": "Paralyze Jelly Fish",
+    "description": "(Enhance any Attack card) Attack applies Vulnerable for 2 turns.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/paralyze-jelly-fish.png"
+    }
+  },
+  {
+    "name": "Plant Talisman of Endurance IV",
+    "description": "(Enhance any Shielding card) Shield Stat +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/plant-talisman-endurance-4.png"
+    }
+  },
+  {
+    "name": "Plant Talisman of Endurance V",
+    "description": "(Enhance any Shielding card) Shield Stat +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/plant-talisman-endurance-5.png"
+    }
+  },
+  {
+    "name": "Plant Talisman of Faith IV",
+    "description": "(Enhance any Healing card) Heal Stat +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/plant-talisman-faith-4.png"
+    }
+  },
+  {
+    "name": "Plant Talisman of Faith V",
+    "description": "(Enhance any Healing card) Heal Stat +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/plant-talisman-faith-5.png"
+    }
+  },
+  {
+    "name": "Power Spell",
+    "description": "(Enhance any card) All teammates gain 2 Damage Boost.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/power-spell.png"
+    }
+  },
+  {
+    "name": "Pre-Order Tag",
+    "description": "(Enhance any card) Add Innate.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/pre-order-tag.png"
+    }
+  },
+  {
+    "name": "Protection Cartridge",
+    "description": "(Enhance any card) All teammates gain 2 Shield Boost.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/protection-cartridge.png"
+    }
+  },
+  {
+    "name": "Red Sage",
+    "description": "(Enhance shield and healing cards) Add Cleanse.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/red-sage.png"
+    }
+  },
+  {
+    "name": "Reptile Energy Drink M",
+    "description": "(Enhance any card) Add Banish. Card's base stat +20%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/reptile-energy-drink-m.png"
+    }
+  },
+  {
+    "name": "Reptile Talisman of Faith IV",
+    "description": "(Enhance a Healing card) Heal Stat +6",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/reptile-talisman-faith-4.png"
+    }
+  },
+  {
+    "name": "Reptile Talisman of Faith V",
+    "description": "(Enhance a Healing card) Heal Stat +10",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/reptile-talisman-faith-5.png"
+    }
+  },
+  {
+    "name": "Reptile Talisman of Vitality IV",
+    "description": "(Enhance any card) Axie's HP +12",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "2",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/reptile-talisman-vitality-4.png"
+    }
+  },
+  {
+    "name": "Reptile Talisman of Vitality V",
+    "description": "(Enhance any card) Axie's HP +18",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "3",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/reptile-talisman-vitality-5.png"
+    }
+  },
+  {
+    "name": "Rocket Stamp",
+    "description": "(Enhance single-target attack cards) This card can target any enemy.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/rocket-stamp.png"
+    }
+  },
+  {
+    "name": "Scotch Tape",
+    "description": "(Enhance any card) Add Retain.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/scotch-tape.png"
+    }
+  },
+  {
+    "name": "Secret Chip",
+    "description": "(Enhance any card) Add Innate.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/secret-chip.png"
+    }
+  },
+  {
+    "name": "Secret Cocoon",
+    "description": "(Enhance any card) Add Innate.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/secret-cocoon.png"
+    }
+  },
+  {
+    "name": "Secret Egg",
+    "description": "(Enhance any Abilities) Add Innate.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/secret-egg.png"
+    }
+  },
+  {
+    "name": "Secret Sprout",
+    "description": "(Enhance any card) Add Innate.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/secret-sprout.png"
+    }
+  },
+  {
+    "name": "Silent Insence",
+    "description": "(Enhance any Attack card) Attack applies Silence for 2 turns to the frontmost enemy.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/silent-incense.png"
+    }
+  },
+  {
+    "name": "Sticky Lizard",
+    "description": "(Enhance any card) Add Retain.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/sticky-lizard.png"
+    }
+  },
+  {
+    "name": "Sticky Octopus",
+    "description": "(Enhance any card) Add Retain.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/sticky-octopus.png"
+    }
+  },
+  {
+    "name": "Sun Stamp",
+    "description": "(Enhance single-target attack cards) This card targets the furthest enemy.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/sun-stamp.png"
+    }
+  },
+  {
+    "name": "Trickster's Card",
+    "description": "(Enhance Skill cards) Draw 1 Card",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/tricksters-card.png"
+    }
+  },
+  {
+    "name": "Viper's Venom",
+    "description": "(Enhance any Attack card) Attack applies 2 Poison.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/vipers-venom.png"
+    }
+  },
+  {
+    "name": "White Sage",
+    "description": "(Enhance shield and healing cards) Add Cleanse. Card's base stat -100%.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "5",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/white-sage.png"
+    }
+  },
+  {
+    "name": "Wooden Idol",
+    "description": "(Enhance any card) Add Retain.",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "4",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/charm/background.png",
+      "imageCard": "https://www.axie.tech/images/templates/charm/art/wooden-idol.png"
+    }
+  }
+]

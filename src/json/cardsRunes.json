@@ -1,0 +1,618 @@
+[
+  {
+    "name": "Adaptive Program",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_mech_hybrid_1.png"
+    }
+  },
+  {
+    "name": "Arcane Protection",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dawn_defensive_1.png"
+    }
+  },
+  {
+    "name": "Bloodlust",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_aquatic_hybrid_1.png"
+    }
+  },
+  {
+    "name": "Calcium Armor",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_aquatic_defensive_1.png"
+    }
+  },
+  {
+    "name": "Celestial Might",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dawn_offensive_1.png"
+    }
+  },
+  {
+    "name": "Collect And Protect",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bug_utility_1.png"
+    }
+  },
+  {
+    "name": "Cursed Ritual",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dusk_offensive_1.png"
+    }
+  },
+  {
+    "name": "Delayed Protection",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_reptile_defensive_1.png"
+    }
+  },
+  {
+    "name": "Dominant Predator",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_beast_hybrid_1.png"
+    }
+  },
+  {
+    "name": "Endless Anger",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_beast_utility_1.png"
+    }
+  },
+  {
+    "name": "Energy Guru",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bird_offensive_1.png"
+    }
+  },
+  {
+    "name": "Feather Descend",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bird_utility_1.png"
+    }
+  },
+  {
+    "name": "Gaia's Embrace",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_plant_defensive_1.png"
+    }
+  },
+  {
+    "name": "Gloomy Dice",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dusk_utility_1.png"
+    }
+  },
+  {
+    "name": "Healing Pulse",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_plant_utility_1.png"
+    }
+  },
+  {
+    "name": "Heart of Ocean",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_aquatic_utility_1.png"
+    }
+  },
+  {
+    "name": "Hearty Warrior",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/aquatic.png",
+      "name": "aquatic"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_aquatic_offensive_1.png"
+    }
+  },
+  {
+    "name": "Heaven's Echoes",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dawn_hybrid_1.png"
+    }
+  },
+  {
+    "name": "Holy Prayer",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dawn.png",
+      "name": "dawn"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dawn_utility_1.png"
+    }
+  },
+  {
+    "name": "Last Stand",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_mech_defensive_1.png"
+    }
+  },
+  {
+    "name": "Leftover Potion",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_utility_1.png"
+    }
+  },
+  {
+    "name": "Malediction",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dusk_hybrid_1.png"
+    }
+  },
+  {
+    "name": "Mini Legion",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_hybrid_1.png"
+    }
+  },
+  {
+    "name": "Miracle Leaf",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_plant_offensive_1.png"
+    }
+  },
+  {
+    "name": "Pangolin Scale",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_beast_defensive_1.png"
+    }
+  },
+  {
+    "name": "Poison Touch",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_reptile_hybrid_1.png"
+    }
+  },
+  {
+    "name": "Pure Instinct",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_hybrid_2.png"
+    }
+  },
+  {
+    "name": "Pure Power",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_offensive_2.png"
+    }
+  },
+  {
+    "name": "Pure Skill",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_defensive_2.png"
+    }
+  },
+  {
+    "name": "Raven's Tactic",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bird_hybrid_1.png"
+    }
+  },
+  {
+    "name": "Reckless Hunter",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/beast.png",
+      "name": "beast"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_beast_offensive_1.png"
+    }
+  },
+  {
+    "name": "Regenerator",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_reptile_utility_1.png"
+    }
+  },
+  {
+    "name": "Rise And Ruin",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/plant.png",
+      "name": "plant"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_plant_hybrid_1.png"
+    }
+  },
+  {
+    "name": "Shady Exchange",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_utility_2.png"
+    }
+  },
+  {
+    "name": "Shield Backup",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_mech_utility_1.png"
+    }
+  },
+  {
+    "name": "Shield Leecher",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bug_hybrid_1.png"
+    }
+  },
+  {
+    "name": "Sturdy Fighter",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bug_offensive_1.png"
+    }
+  },
+  {
+    "name": "Thick Shield",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_defensive_1.png"
+    }
+  },
+  {
+    "name": "Tough Strike",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/neutral.png",
+      "name": "neutral"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_offensive_1.png"
+    }
+  },
+  {
+    "name": "Vault Builder",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bug.png",
+      "name": "bug"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bug_defensive_1.png"
+    }
+  },
+  {
+    "name": "Venom Born",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/bird.png",
+      "name": "bird"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bird_defensive_1.png"
+    }
+  },
+  {
+    "name": "Venom Master",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/reptile.png",
+      "name": "reptile"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_reptile_offensive_1.png"
+    }
+  },
+  {
+    "name": "Wicked Ward",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/dusk.png",
+      "name": "dusk"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dusk_defensive_1.png"
+    }
+  },
+  {
+    "name": "Zap Armor",
+    "description": "None",
+    "cardInformation": "Long description goes here.",
+    "energyCost": "None",
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/class-icons/mech.png",
+      "name": "mech"
+    },
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
+      "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_mech_offensive_1.png"
+    }
+  }
+]

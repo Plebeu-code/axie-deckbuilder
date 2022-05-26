@@ -1,140 +1,211 @@
+//! React
+import { useMemo, useState, useContext } from "react";
+//! Style
 import "../style/homeCard.scss";
-import charms from "../assets/icon/charms.png";
-import curses from "../assets/icon/curses.png";
-import favorutes from "../assets/icon/favourites.png";
+//! Assets
 import search_icon from "../assets/icon/search-icon.svg";
-import xXx from "../assets/icon/XXXX.svg";
-import { Footer } from "../components/footer/Footer";
-import { TCard, CardAxie } from "../components/Card";
-import cards from "../cardsAxies.json";
-import { useMemo, useState } from "react";
+//! Components
+import { CardAxie } from "../components/CardAxie";
+import { TCard } from "../types";
+import DefaultCards from "../json/cardsAxies.json";
+import { Footer } from "../components/Footer/Footer";
+import { ComponentNav } from "../components/Nav/ComponentNav";
+import { HeaderTop } from "../components/Header/HeaderTop";
+import { ThemeContext } from "../App";
+import * as fs from "fs";
+
+class CardHandler {
+  constructor(protected readonly cached_cards: TCard[]) {}
+
+  public get cards() {
+    return this.cached_cards;
+  }
+
+  public formatBy(format: string): this {
+    const formatFunctions = {
+      az: () =>
+        this.cached_cards.sort(
+          ({ name: currentCardName }, { name: nextCardName }) =>
+            currentCardName.localeCompare(nextCardName, "pt-br")
+        ),
+      za: () =>
+        this.cached_cards.sort(
+          ({ name: currentCardName }, { name: nextCardName }) =>
+            nextCardName.localeCompare(currentCardName, "pt-br")
+        ),
+      highestdamage: () =>
+        this.cached_cards
+          .sort(({ status: currentCardStatus }, { status: nextCardStatus }) => {
+            if (!currentCardStatus || !("attack" in currentCardStatus))
+              return -1;
+            if (!nextCardStatus || !("attack" in nextCardStatus)) return 1;
+
+            return (
+              Number(currentCardStatus?.attack?.attackDamage) -
+              Number(nextCardStatus?.attack?.attackDamage)
+            );
+          })
+          .reverse(),
+      lowestdamage: () =>
+        this.cached_cards
+          .sort(({ status: currentCardStatus }, { status: nextCardStatus }) => {
+            if (!currentCardStatus || !("attack" in currentCardStatus))
+              return -1;
+            if (!nextCardStatus || "attack" in nextCardStatus) return 1;
+
+            return (
+              Number(nextCardStatus?.attack?.attackDamage) -
+              Number(currentCardStatus?.attack?.attackDamage)
+            );
+          })
+          .reverse(),
+      highestshield: () =>
+        this.cached_cards
+          .sort(({ status: currentCardStatus }, { status: nextCardStatus }) => {
+            if (!currentCardStatus || !("shield" in currentCardStatus))
+              return -1;
+            if (!nextCardStatus || !("shield" in nextCardStatus)) return 1;
+
+            return (
+              Number(currentCardStatus.shield.shieldDamage) -
+              Number(nextCardStatus.shield.shieldDamage)
+            );
+          })
+          .reverse(),
+      lowestshield: () =>
+        this.cached_cards
+          .sort(({ status: currentCardStatus }, { status: nextCardStatus }) => {
+            if (!currentCardStatus || !("shield" in currentCardStatus))
+              return -1;
+            if (!nextCardStatus || !("shield" in nextCardStatus)) return 1;
+
+            return (
+              Number(nextCardStatus.shield.shieldDamage) -
+              Number(currentCardStatus.shield.shieldDamage)
+            );
+          })
+          .reverse(),
+      highesthealth: () =>
+        this.cached_cards
+          .sort(({ status: currentCardStatus }, { status: nextCardStatus }) => {
+            if (!currentCardStatus || !("healing" in currentCardStatus))
+              return -1;
+            if (!nextCardStatus || !("healing" in nextCardStatus)) return 1;
+
+            return (
+              Number(currentCardStatus.healing.healingAmount) -
+              Number(nextCardStatus.healing.healingAmount)
+            );
+          })
+          .reverse(),
+      lowesthealth: () =>
+        this.cached_cards.sort(
+          ({ status: currentCardStatus }, { status: nextCardStatus }) => {
+            if (!currentCardStatus || !("healing" in currentCardStatus))
+              return 1;
+            if (!nextCardStatus || !("healing" in nextCardStatus)) return -1;
+
+            return (
+              Number(nextCardStatus.healing.healingAmount) -
+              Number(currentCardStatus.healing.healingAmount)
+            );
+          }
+        ),
+      highestenergy: () =>
+        this.cached_cards.sort(
+          (
+            { energyCost: currentCardEnergyCost },
+            { energyCost: nextCardEnergyCost }
+          ) => {
+            return (
+              parseInt(nextCardEnergyCost) - parseInt(currentCardEnergyCost)
+            );
+          }
+        ),
+      lowestenergy: () =>
+        this.cached_cards.sort(
+          (
+            { energyCost: currentCardEnergyCost },
+            { energyCost: nextCardEnergyCost }
+          ) => {
+            return (
+              parseInt(currentCardEnergyCost) - parseInt(nextCardEnergyCost)
+            );
+          }
+        ),
+    };
+    void formatFunctions[format]();
+    return this;
+  }
+}
 
 export function HomeCard() {
-  console.log('duplicação!');
-  
-  const [axieNameSearch, setAxieNameSearch] = useState("");
-  const [axieClassNameSearch, setClassNameSearch] = useState("");
-  const [axieBodyPartSearch, setAxieBodyPart] = useState("");
-  const [energySearch, setEnergySearch] = useState("");
-  const [tagSearch, setTag] = useState("");
 
-  if (axieClassNameSearch.toLowerCase() === "classe") setClassNameSearch("");
-  if (axieBodyPartSearch.toLowerCase() === "tipo de parte")
-    setClassNameSearch("");
-  if (energySearch.toLowerCase() === "custo de energia") setClassNameSearch("");
-  if (tagSearch.toLowerCase() === "tag") setClassNameSearch("");
-
-  const hasSearch =
-    axieNameSearch ||
-    axieClassNameSearch ||
-    axieBodyPartSearch ||
-    energySearch ||
-    tagSearch
-      ? true
-      : false;
+  let [axieName, setAxieName] = useState(""),
+    [axieClassName, setAxieClassName] = useState(""),
+    [axieBodyPart, setAxieBodyPart] = useState(""),
+    [axieEnergyCost, setAxieEnergyCost] = useState(""),
+    [axieTag, setAxieTag] = useState(""),
+    [listFormat, setListFormat] = useState("az");
+  const { theme } = useContext(ThemeContext);
 
   const filteredCards = useMemo(() => {
-    if (!hasSearch) return cards;
-    return cards.filter(
-      ({
-        name: axieName,
-        class: { name: axieClassName },
-        bodyPart: { name: axieBodyPartName },
-        energyCost,
-        tags,
-      }) =>
-        axieName.toLowerCase().includes(axieNameSearch.toLowerCase()) &&
-        axieClassName.toLowerCase() === axieClassNameSearch.toLowerCase() &&
-        axieBodyPartName.toLowerCase() === axieBodyPartSearch.toLowerCase()
-    );
-  }, [
-    axieNameSearch,
-    axieClassNameSearch,
-    axieBodyPartSearch,
-    energySearch,
-    tagSearch,
-  ]);
+    const hasSearchContent =
+      axieName || axieClassName || axieBodyPart || axieEnergyCost || axieTag
+        ? true
+        : false;
 
-  console.log(filteredCards);
+    const cardManager = new CardHandler(DefaultCards as any).formatBy(
+      listFormat
+    );
+
+    return hasSearchContent
+      ? cardManager.cards.filter(
+          ({
+            name: cardName,
+            class: { name: cardClassName },
+            bodyPart: { name: cardBodyPart },
+            energyCost: cardEnergyCost,
+            tags: cardTags,
+          }) =>
+            cardName.toLowerCase().includes(axieName.toLowerCase()) &&
+            cardClassName.toLowerCase().includes(axieClassName) &&
+            cardBodyPart.toLowerCase().includes(axieBodyPart) &&
+            cardEnergyCost.includes(axieEnergyCost) &&
+            cardTags
+              .map(({ name: tagName }) =>
+                tagName.toLowerCase().includes(axieTag)
+              )
+              .includes(true)
+        )
+      : cardManager.cards;
+  }, [
+    axieName,
+    axieClassName,
+    axieBodyPart,
+    axieEnergyCost,
+    axieTag,
+    listFormat,
+  ]);
 
   return (
     // Conteudo principal
-    <div className="container5">
+    <div className="container5" id={theme}>
       {/* Responsividade do site */}
       <div className="container-responsiv">
         {/* apresentação com logo */}
-        <div className="container-apresentacao">
-          <div className="responsive-apre">
-            <div className="apresentacao01">
-              <img
-                src="https://media.discordapp.net/attachments/560251522127101972/964295901705273364/BAYZ_Logo_Vetorizado_White.png"
-                alt=""
-              />
-              <div id="linha_home"></div>
-              <img
-                src="https://media.discordapp.net/attachments/560251522127101972/964295901348790332/explore_os_cards.png"
-                alt=""
-              />
-            </div>
-            <div className="dropdown-language">
-              <div className="dropdown-select">
-                <img
-                  src="https://media.discordapp.net/attachments/888725319228456970/964386957717295124/united-states.png"
-                  alt=""
-                />
-                <span>English</span>
-                <i className="fa-solid fa-caret-down"></i>
-              </div>
-              <div className="dropdown-list">
-                <div className="dropdown-list__item">
-                  {" "}
-                  <img
-                    src="https://media.discordapp.net/attachments/560251522127101972/964400226842587156/unknown.png"
-                    alt=""
-                  />{" "}
-                  Português
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <HeaderTop />
         {/* Menu do site */}
-        <div className="container-header">
-          <ul>
-            <li id="select-menu">
-              <img src={xXx} alt="" /> CARDS
-            </li>
-            <li>
-              <img src={curses} alt="" /> CURSES
-            </li>
-            <li>
-              <img src={curses} alt="" /> TOOLS
-            </li>
-            <li>
-              <img src={curses} alt="" /> RUNES
-            </li>
-            <li>
-              <img src={charms} alt="" /> CHARMS
-            </li>
-            <li>
-              <img src={charms} alt="" /> STATUS EFFECTS
-            </li>
-            <li>
-              <img src={favorutes} alt="" /> FAVORITES
-            </li>
-          </ul>
-        </div>
+        <ComponentNav cards="select-menu" />
         {/* conteúdo princiapal do site  */}
-        <div className="container-main">
+        <div className="container-main" id={theme}>
           <form action="#">
             <div className="search-x">
               <input
                 type="search"
-                name=""
-                id=""
-                placeholder="Busca de cards"
-                value={axieNameSearch}
-                onChange={(e) => setAxieNameSearch(e.target.value)}
+                placeholder="Search cards"
+                value={axieName}
+                onChange={(e) => setAxieName(e.target.value)}
               />
               <img src={search_icon} alt="" />
             </div>
@@ -142,9 +213,13 @@ export function HomeCard() {
               <i className="fa-solid fa-caret-down"></i>
 
               <select
-                name=""
-                id=""
-                onChange={(e) => setClassNameSearch(e.target.value)}
+                onChange={(e) =>
+                  setAxieClassName(
+                    e.target.value === "Classe"
+                      ? ""
+                      : e.target.value.toLowerCase()
+                  )
+                }
               >
                 <option defaultChecked>Classe</option>
                 <option value="aquatic">Aquatic</option>
@@ -161,9 +236,15 @@ export function HomeCard() {
               <select
                 name=""
                 id=""
-                onChange={(e) => setAxieBodyPart(e.target.value)}
+                onChange={(e) =>
+                  setAxieBodyPart(
+                    e.target.value === "Part Type"
+                      ? ""
+                      : e.target.value.toLowerCase()
+                  )
+                }
               >
-                <option defaultChecked>Tipo de parte</option>
+                <option defaultChecked>Part Type</option>
                 <option value="eyes">Eyes</option>
                 <option value="ears">Ears</option>
                 <option value="back">Back</option>
@@ -178,19 +259,30 @@ export function HomeCard() {
               <select
                 name=""
                 id=""
-                onChange={(e) => setEnergySearch(e.target.value)}
+                onChange={(e) =>
+                  setAxieEnergyCost(
+                    e.target.value === "Energy Cost" ? "" : e.target.value
+                  )
+                }
               >
-                <option value="nada">Custo de energia</option>
+                <option value="">Energy Cost</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
-                <option value="3">3</option>
               </select>
             </div>
             <div className="dropdown-edit">
               <i className="fa-solid fa-caret-down"></i>
 
-              <select name="" id="" onChange={(e) => setTag(e.target.value)}>
+              <select
+                name=""
+                id=""
+                onChange={(e) =>
+                  setAxieTag(
+                    e.target.value === "Tag" ? "" : e.target.value.toLowerCase()
+                  )
+                }
+              >
                 <option defaultChecked>Tag</option>
                 <option value="attack">Attack</option>
                 <option value="skill">Skill</option>
@@ -205,16 +297,34 @@ export function HomeCard() {
           <div className="backgrundp1">
             <div className="aAz">
               <i className="fa-solid fa-caret-down"></i>
-              <select name="" id="">
-                <option value="">Nome A - Z</option>
-                <option value="">Nome A - Z</option>
-                <option value="">Nome A - Z</option>
-                <option value="">Nome A - Z</option>
+              <select
+                name=""
+                id=""
+                onChange={(e) => setListFormat(e.target.value.toLowerCase())}
+              >
+                <option defaultChecked value="aZ">
+                  Nome A - Z
+                </option>
+                <option value="zA">Nome Z - A</option>
+                <option value="highestDamage">Maior Dano</option>
+                <option value="lowestDamage">Menor Dano</option>
+                <option value="highestShield">Maior Escudo</option>
+                <option value="lowestShield">Menor Escudo</option>
+                <option value="highestHealth">Maior Vida</option>
+                <option value="lowestHealth">Menor Vida</option>
+                <option value="highestEnergy">Maior Energia</option>
+                <option value="lowestEnergy">Menor Energia</option>
               </select>
             </div>
             <div className="backgroundp2">
-              {filteredCards.map((card: TCard) => (
-                <CardAxie {...card} />
+              {filteredCards.map((card: TCard, cardId) => (
+                <CardAxie
+                  key={cardId}
+                  {...{
+                    ...card,
+                    cardId,
+                  }}
+                />
               ))}
             </div>
           </div>

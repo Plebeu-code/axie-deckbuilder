@@ -1,0 +1,107 @@
+.container-footer {
+  display: flex;
+  height: 220px;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+
+  background-size: 400% 400% !important;
+  background: linear-gradient(-45deg, #1962f0, #356297, #23a6d5, #5c04c2);
+  animation: gradient 15s ease-out infinite;
+  z-index: 2;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .footer-responsiv {
+    width: 1303px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #peixinho1 {
+      margin-top: 50px;
+      height: 60px;
+      animation: floatAxie1 3s ease-out infinite;
+
+      @keyframes floatAxie1 {
+        0%,100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-20px);
+        } 
+        
+      }
+    }
+
+    #peixinho2 {
+      margin-top: 50px;
+      height: 60px;
+      animation: floatAxie1 3.1s ease-out infinite;
+    }
+
+    .footer-main {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .footer-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+
+        > div {
+          width: 2px;
+          height: 40px;
+          background-color: white;
+        }
+      }
+    }
+  }
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    > span {
+      margin-right: 15px;
+      font-weight: 700;
+      font-family: "Quantico", sans-serif;
+    }
+
+    .footer-social-redes {
+      width: 320px;
+      height: 50px;
+      border-radius: 7px;
+      box-shadow: rgb(40 38 38 / 25%) 8px 10px 5px -8px inset,
+        rgb(10 9 9 / 25%) 8px -10px 5px -8px inset;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      img {
+        height: 23px;
+      }
+    }
+  }
+}
+

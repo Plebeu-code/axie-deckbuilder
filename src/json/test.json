@@ -1,0 +1,136 @@
+[
+  {
+      "pt-br": [
+        {
+          "name": "",
+          "description": "",
+          "cardInformation": "",
+          "energyCost": "",
+          "status": {
+            "shield": {
+              "shieldImage": "",
+              "shieldDamage": ""
+            }
+          },
+          "bodyPart": {
+            "graphiURL": "",
+            "name": ""
+          },
+          "class": {
+            "graphiURL": "",
+            "name": ""
+          },
+          "tags": [
+            {
+              "graphiURL": "",
+              "name": ""
+            }
+          ],
+          "cardStyle": {
+            "backgroundCard": "",
+            "imageCard": "",
+            "imageBottomCard": ""
+          }
+        }
+      ],
+      "en-us": [
+        {
+          "name": "Aegis Talisman",
+          "description": "Target any ally.",
+          "cardInformation": "Long description goes here.",
+          "energyCost": "1",
+          "status": {
+            "shield": {
+              "shieldImage": "https://www.axie.tech/images/templates/card/stats/shield.png",
+              "shieldDamage": "65"
+            }
+          },
+          "bodyPart": {
+            "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/tail.png",
+            "name": "tail"
+          },
+          "class": {
+            "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/dawn.png",
+            "name": "dawn"
+          },
+          "tags": [
+            {
+              "graphiURL": "https://www.axie.tech/images/templates/card/tags/skill.png",
+              "name": "skill"
+            }
+          ],
+          "cardStyle": {
+            "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/dawn.jpg",
+            "imageCard": "https://www.axie.tech/images/templates/card/art/dawn-tail-03.jpg",
+            "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/dawn.png"
+          }
+        }
+      ],
+      "es-es": [
+        {
+          "name": "",
+          "description": "",
+          "cardInformation": "",
+          "energyCost": "",
+          "status": {
+            "shield": {
+              "shieldImage": "",
+              "shieldDamage": ""
+            }
+          },
+          "bodyPart": {
+            "graphiURL": "",
+            "name": ""
+          },
+          "class": {
+            "graphiURL": "",
+            "name": ""
+          },
+          "tags": [
+            {
+              "graphiURL": "",
+              "name": ""
+            }
+          ],
+          "cardStyle": {
+            "backgroundCard": "",
+            "imageCard": "",
+            "imageBottomCard": ""
+          }
+        }
+      ],
+      "tl-tgl": [
+        {
+          "name": "",
+          "description": "",
+          "cardInformation": "",
+          "energyCost": "",
+          "status": {
+            "shield": {
+              "shieldImage": "",
+              "shieldDamage": ""
+            }
+          },
+          "bodyPart": {
+            "graphiURL": "",
+            "name": ""
+          },
+          "class": {
+            "graphiURL": "",
+            "name": ""
+          },
+          "tags": [
+            {
+              "graphiURL": "",
+              "name": ""
+            }
+          ],
+          "cardStyle": {
+            "backgroundCard": "",
+            "imageCard": "",
+            "imageBottomCard": ""
+          }
+        }
+      ]
+  }
+]

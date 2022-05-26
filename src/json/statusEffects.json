@@ -1,0 +1,318 @@
+[
+  {
+    "status": {
+      "buffs": {
+        "pt-br": [
+          {
+            "title": "Buffs",
+            "description": "Efeitos de Buffs"
+          },
+          {
+            "title": "Bubble",
+            "description": "Bloqueie 4 DMG por pilha contra ataques sem multi-hit. Bloqueie 2 DMG por pilha contra ataques multi-hit. Máx.: 3 pilhas. Transforme-se em 'Bubble Bomb' ao atingir 3 pilhas.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042833175416932/unknown.png"
+          },
+          {
+            "title": "Cleanser",
+            "description": "Cada pilha nega 1 debuff aplicado no alvo.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042770256687144/unknown.png"
+          },
+          {
+            "title": "Feather",
+            "description": "QuaQuando Axie fizer um ataque, consuma todas as pilhas de Penas para causar 3 DANO bônus por pilha e curar 1 HP por pilha. Máximo: 10 pilhasndo",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042708793331772/unknown.png"
+          },
+          {
+            "title": "Healing Boost",
+            "description": "Aumenta os efeitos das cartas de cura para esta unidade em 1 HP por pilha.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042631324536862/unknown.png"
+          },
+          {
+            "title": "Meditate",
+            "description": "Medite por 2 turnos. Se atacado durante a Meditação, desperte e ganhe 3 de Raiva. Caso contrário, limpe 1 debuff e ganhe 1 de energia após o efeito terminar.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042558582726656/unknown.png"
+          },
+          {
+            "title": "Shield Boost",
+            "description": "O alvo recebe 1 de Armadura por pilha.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042494862876672/unknown.png"
+          },
+          {
+            "title": "Bubble Bomb",
+            "description": "O próximo ataque explode Bubble Bomb e causa 20 DMG a todos os inimigos.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042430065082429/unknown.png"
+          },
+          {
+            "title": "Damage Boost",
+            "description": "O alvo tem Ataque aumentado em 1 por pilha.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042372817023016/unknown.png"
+          },
+          {
+            "title": "Fury",
+            "description": "Ganha 1 Energia quando se transforma. Causa 75% mais dano. Durar 1 turno.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042310397394944/unknown.png"
+          },
+          {
+            "title": "Leaf",
+            "description": "Regenerar 4 HP no final do seu turno. Pilha máxima: 5.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042240608354394/unknown.png"
+          },
+          {
+            "title": "Rage",
+            "description": "DMG é aumentado em 2 por pilha de Fúria. Transforma-se em Forma de Fúria quando atinge 10 de Fúria.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042177677008947/unknown.png"
+          },
+          {
+            "title": "Stealth",
+            "description": "O alvo não pode ser direcionado diretamente. Se usar um cartão, remova Stealth.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042074732032010/unknown.png"
+          }
+        ],
+        "en-us": [
+          {
+            "title": "Buffs",
+            "description": "Positive status effects."
+          },
+          {
+            "title": "Bubble",
+            "description": "Block 5 DMG/stack. Max: 3 stack. Turn into Bubble Bomb upon reaching 3 stacks.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042833175416932/unknown.png"
+          },
+          {
+            "title": "Cleanser",
+            "description": "Each stack negates 1 debuff applied on the target.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042770256687144/unknown.png"
+          },
+          {
+            "title": "Feather",
+            "description": "When Axie does an attack, consume all Feather stacks to deal 2 bonus DMG per stack and heal 2 HP per stack. Max : 10 stack.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042708793331772/unknown.png"
+          },
+          {
+            "title": "Healing Boost",
+            "description": "Increase healing card effects to this unit by 1 HP per stack.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042631324536862/unknown.png"
+          },
+          {
+            "title": "Meditate",
+            "description": "Meditate for 2 turns. If attacked while Meditating, awake and gain 3 Rage. If not, Cleanse 1 debuff and gain 1 Energy after effect ends.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042558582726656/unknown.png"
+          },
+          {
+            "title": "Shield Boost",
+            "description": "The target has Shield gained from cards increased by 1 per stack.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042494862876672/unknown.png"
+          },
+          {
+            "title": "Bubble Bomb",
+            "description": "Next attack explodes Bubble Bomb and deals 20 DMG to all Enemies.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042430065082429/unknown.png"
+          },
+          {
+            "title": "Damage Boost",
+            "description": "The target has Attack DMG increased by 1 per stack.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042372817023016/unknown.png"
+          },
+          {
+            "title": "Fury",
+            "description": "Gain 1 Energy when transforms. Deal double damage and last for 1 turn.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042310397394944/unknown.png"
+          },
+          {
+            "title": "Leaf",
+            "description": "Regen 5 HP at the end of your turn. Max stack: 5",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042240608354394/unknown.png"
+          },
+          {
+            "title": "Rage",
+            "description": "DMG is increases by 2 per Rage stack. Transform into Fury Form when reaches 10 Rage stack.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042177677008947/unknown.png"
+          },
+          {
+            "title": "Stealth",
+            "description": "The target cannot be targeted directly. If it uses a card, remove Stealth.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967042074732032010/unknown.png"
+          }
+        ]
+      },
+      "debuffs": {
+        "pt-br": [
+          {
+            "title": "Debuffs",
+            "description": "Efeitos de status negativos."
+          },
+          {
+            "title": "Bleed",
+            "description": "Sempre que o alvo usa uma carta, ele perde 15HP.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967046139352326254/unknown.png"
+          },
+          {
+            "title": "Disarmed",
+            "description": "O alvo não pode usar cartas de Ataque.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967046047585169448/unknown.png"
+          },
+          {
+            "title": "Fear",
+            "description": "Sempre que o alvo usar uma carta de Ataque, embaralhe um Confuso em sua pilha de compra.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045976265211964/unknown.png"
+          },
+          {
+            "title": "Heal Block",
+            "description": "O alvo não pode ser curado.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045862058512435/unknown.png"
+          },
+          {
+            "title": "Poison",
+            "description": "No início de seu turno, o alvo perde 3 HP por pilha e as pilhas são reduzidas em 1. Máximo: 30 pilhas.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045862058512435/unknown.png"
+          },
+          {
+            "title": "Sleep",
+            "description": "O alvo não pode usar cartas. Se for atacado, remova Sleep.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045697704722452/unknown.png"
+          },
+          {
+            "title": "Vulnerable",
+            "description": "O alvo recebe 20% mais dano de ataque.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045540816769105/unknown.png"
+          },
+          {
+            "title": "Death Mark",
+            "description": "Sempre que o oponente joga uma Carta de Ataque, o alvo sofre 13 DANO por Energia gasta.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045626556727346/unknown.png"
+          },
+          {
+            "title": "Doubt",
+            "description": "Ganhe 50% menos HP de cura.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967044797770641408/unknown.png"
+          },
+          {
+            "title": "Fragile",
+            "description": "O alvo ganha 20% menos Escudo das cartas.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967044738098274364/unknown.png"
+          },
+          {
+            "title": "Stunned",
+            "description": "O alvo não pode realizar nenhuma ação.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/968201995460694096/debuff_stunned.png"
+          },
+          {
+            "title": "Hex",
+            "description": "Sempre que o alvo usar uma carta que não seja de Ataque, embaralhe um Confuso em sua pilha de compra.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967044682800586802/unknown.png"
+          },
+          {
+            "title": "Silence",
+            "description": "O alvo não pode usar cartas que não sejam de Ataque.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967044621463093259/unknown.png"
+          },
+          {
+            "title": "Weak",
+            "description": "O alvo causa 20% menos dano de ataque.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967044507575140362/unknown.png"
+          }
+        ],
+        "en-us": [
+          {
+            "title": "Debuffs",
+            "description": "Negative status effects."
+          },
+          {
+            "title": "Bleed",
+            "description": "Whenever the target uses a card, it loses 15HP.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967046139352326254/unknown.png"
+          },
+          {
+            "title": "Disarmed",
+            "description": "The target cannot use Attack cards.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967046047585169448/unknown.png"
+          },
+          {
+            "title": "Fear",
+            "description": "Whenever the target uses an Attack card, shuffle a Confused into its draw pile.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045976265211964/unknown.png"
+          },
+          {
+            "title": "Heal Block",
+            "description": "The target cannot be healed.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045862058512435/unknown.png"
+          },
+          {
+            "title": "Poison",
+            "description": "At the start of its turn, the target loses 3 HP per stack and stacks are reduced by 1. Max: 30 stacks.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045862058512435/unknown.png"
+          },
+          {
+            "title": "Sleep",
+            "description": "The target cannot use cards. If it is attacked, remove Sleep.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045697704722452/unknown.png"
+          },
+          {
+            "title": "Vulnerable",
+            "description": "The target receives 20% more attack damage.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045540816769105/unknown.png"
+          },
+          {
+            "title": "Death Mark",
+            "description": "Whenever opponent plays an Attack Card, the target take 13 DMG per Energy spent.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967045626556727346/unknown.png"
+          },
+          {
+            "title": "Doubt",
+            "description": "The target gains 20% less HP from Healing.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967044797770641408/unknown.png"
+          },
+          {
+            "title": "Fragile",
+            "description": "The target gains 20% less Shield from cards.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967044738098274364/unknown.png"
+          },
+          {
+            "title": "Stunned",
+            "description": "The target cannot perform any action.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/968201995460694096/debuff_stunned.png"
+          },
+          {
+            "title": "Hex",
+            "description": "Whenever the target uses a non-Attack card, shuffle a Confused into its draw pile.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967044682800586802/unknown.png"
+          },
+          {
+            "title": "Silence",
+            "description": "The target cannot use non-Attack cards.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967044621463093259/unknown.png"
+          },
+          {
+            "title": "Weak",
+            "description": "The target deals 20% less attack damage.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/967044507575140362/unknown.png"
+          }
+        ]
+      },
+      "neutral": {
+        "pt-br": [
+          {
+            "title": "Neutral",
+            "description": "Efeitos de status neutro."
+          },
+          {
+            "title": "Taunt",
+            "description": "O alvo é sempre alvo das habilidades de ataque do inimigo.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/968072495435513886/neutral_taunt.png"
+          }
+        ],
+        "en-us": [
+          {
+            "title": "Neutral",
+            "description": "Neutral status effects."
+          },
+          {
+            "title": "Taunt",
+            "description": "The target is always targeted by enemy's attack abilities.",
+            "graphiURL": "https://cdn.discordapp.com/attachments/560251522127101972/968072495435513886/neutral_taunt.png"
+          }
+        ]
+      }
+    }
+  }
+]

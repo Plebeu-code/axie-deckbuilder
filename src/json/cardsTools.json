@@ -1,0 +1,231 @@
+[
+  {
+    "name": "Forest Breath",
+    "description": "Retain.Target an ally. Cleanse.",
+    "cardInformation": "",
+    "energyCost": "1",
+    "status": {
+      "healing": {
+        "healingImage": "https://www.axie.tech/images/templates/card/stats/heal.png",
+        "healingAmount": "50"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/skill.png",
+        "name": "skill"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/retain_effect.png",
+        "name": "skill"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/tool.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-forestbreath-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/tool.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Retain",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Cleanse",
+        "keywordDescription": "None"
+      }
+    ]
+  },
+  {
+    "name": "Forest Wrath",
+    "description": "Attack all enemies. Deal 10 bonus pure DMG per debuffed allies.",
+    "cardInformation": "",
+    "energyCost": "1",
+    "status": {
+      "attack": {
+        "attackImage": "https://www.axie.tech/images/templates/card/stats/damage.png",
+        "attackDamage": "30"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/attack.png",
+        "name": "none"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/tool.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-forestwrath-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/tool.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "None",
+        "keywordDescription": "None"
+      }
+    ]
+  },
+  {
+    "name": "Lumber Shield",
+    "description": "Retain. Target any ally. Banish.",
+    "cardInformation": "",
+    "energyCost": "0",
+    "status": {
+      "shield": {
+        "shieldImage": "https://www.axie.tech/images/templates/card/stats/shield.png",
+        "shieldDamage": "12"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/skill.png",
+        "name": "skill"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/retain_effect.png",
+        "name": "banish"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/banish.png",
+        "name": "banish"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/tool.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-lumbershield-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/tool.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Retain",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Banish",
+        "keywordDescription": "None"
+      }
+    ]
+  },
+  {
+    "name": "Pure Water",
+    "description": "Retain. Target any ally. Banish.",
+    "cardInformation": "",
+    "energyCost": "0",
+    "status": {
+      "healing": {
+        "healingImage": "https://www.axie.tech/images/templates/card/stats/heal.png",
+        "healingAmount": "6"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/skill.png",
+        "name": "skill"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/retain_effect.png",
+        "name": "banish"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/banish.png",
+        "name": "banish"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/tool.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-purewater-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/tool.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Retain",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Banish",
+        "keywordDescription": "None"
+      }
+    ]
+  },
+  {
+    "name": "Strawberry",
+    "description": "Retain. Target any ally. Banish.",
+    "cardInformation": "",
+    "energyCost": "0",
+    "status": {
+      "healing": {
+        "healingImage": "https://www.axie.tech/images/templates/card/stats/heal.png",
+        "healingAmount": "60"
+      }
+    },
+    "bodyPart": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/body-parts/none.png",
+      "name": "none"
+    },
+    "class": {
+      "graphiURL": "https://www.axie.tech/images/templates/card/class-icons/none.png",
+      "name": "none"
+    },
+    "tags": [
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/skill.png",
+        "name": "skill"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/retain_effect.png",
+        "name": "banish"
+      },
+      {
+        "graphiURL": "https://www.axie.tech/images/templates/card/tags/banish.png",
+        "name": "banish"
+      }
+    ],
+    "cardStyle": {
+      "backgroundCard": "https://www.axie.tech/images/templates/card/backgrounds/tool.jpg",
+      "imageCard": "https://www.axie.tech//images/templates/card/art/tool-strawberry-02.jpg",
+      "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/tool.png"
+    },
+    "keyWordType": [
+      {
+        "keyWord": "Retain",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Banish",
+        "keywordDescription": "None"
+      }
+    ]
+  }
+]
