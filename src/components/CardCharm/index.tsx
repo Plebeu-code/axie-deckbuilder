@@ -15,7 +15,7 @@ export function CardCharm(card: TCharm) {
         <div
           className={
             FavoritedCardsHandler.contains({
-              cardId: card.cardId,
+              id: card.cardId,
               type: "CHARM",
             })
               ? "favorite"

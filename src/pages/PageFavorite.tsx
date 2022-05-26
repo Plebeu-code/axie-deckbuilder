@@ -3,7 +3,7 @@ import { useContext, useState } from "react";
 //! Style
 import "../style/pageRuna.scss";
 //!Components
-import { Footer } from "../components/Footer/Footer";
+import { Footer } from "../components/Footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
 import { PageFavoriteContext, ThemeContext } from "../App";
@@ -20,15 +20,15 @@ export function PageFavorite() {
 
   const { favorites, toggleFavorites } = useContext(PageFavoriteContext);
 
-  FavoritedCardsHandler.cards.forEach(({ cardId, type }) => {
+  FavoritedCardsHandler.cards.forEach(({ id: cardId, type }) => {
     if (
       !pageFavoriteHandler.contains({
-        cardId,
+        id: cardId,
         type,
       })
     ) {
       return pageFavoriteHandler.add({
-        cardId,
+        id: cardId,
         type,
       });
     }
@@ -45,9 +45,10 @@ export function PageFavorite() {
               <PageFavoriteContext.Provider
                 value={{ favorites, toggleFavorites }}
               >
-                {favorites.map((cardData) => (
+                {/* {favorites.map((cardData) => (
                   <CardFavorite {...cardData} />
-                ))}
+                ))} */
+                }
               </PageFavoriteContext.Provider>
             </div>
           </div>

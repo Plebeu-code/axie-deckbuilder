@@ -8,7 +8,7 @@ import search_icon from "../assets/icon/search-icon.svg";
 import type { TCurse } from "../types";
 import { CardCurse } from "../components/CardCurse";
 
-import { Footer } from "../components/Footer/Footer";
+import { Footer } from "../components/Footer";
 import AxieCurseCards from "../json/cardsCurses.json";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";

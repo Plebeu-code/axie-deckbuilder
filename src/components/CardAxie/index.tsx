@@ -20,13 +20,13 @@ export function CardAxie(card: TCard) {
           <div
             className={
               FavoritedCardsHandler.contains({
-                cardId: card.cardId,
+                id: card.id,
                 type: "CARD",
               })
                 ? "favorite"
                 : null
             }
-            id={String(card.cardId)}
+            id={String(card.id)}
           >
             <div className="favorite-star">
               <svg

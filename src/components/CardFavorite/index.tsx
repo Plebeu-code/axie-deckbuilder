@@ -17,7 +17,7 @@ export function CardFavorite({ cardId, type, card }: CardFavoriteProps) {
   if (type === "CARD")
     return (
       <>
-        <CardAxie key={cardId} {...{ ...card, cardId }} />
+        <CardAxie key={cardId} {...{ ...card, id: cardId }} />
       </>
     );
   if (type === "CURSE")

@@ -8,11 +8,11 @@ import search_icon from "../assets/icon/search-icon.svg";
 import { CardAxie } from "../components/CardAxie";
 import { TCard } from "../types";
 import DefaultCards from "../json/cardsAxies.json";
-import { Footer } from "../components/Footer/Footer";
+import { Footer } from "../components/Footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
 import { ThemeContext } from "../App";
-import * as fs from "fs";
+import CardFilterHandler from "../modules/CardFilterHandler";
 
 class CardHandler {
   constructor(protected readonly cached_cards: TCard[]) {}
@@ -140,6 +140,7 @@ class CardHandler {
 }
 
 export function HomeCard() {
+
   let [axieName, setAxieName] = useState(""),
     [axieClassName, setAxieClassName] = useState(""),
     [axieBodyPart, setAxieBodyPart] = useState(""),
@@ -155,9 +156,11 @@ export function HomeCard() {
         ? true
         : false;
 
-    const cardManager = new CardHandler(DefaultCards as any).formatBy(
-      listFormat
-    );
+    // const cardManager = new CardHandler(DefaultCards as any).formatBy(
+    //   listFormat
+    // );
+
+    const cardManager = new CardFilterHandler(DefaultCards).filterBy("zA")
 
     return hasSearchContent
       ? cardManager.cards.filter(
@@ -189,15 +192,10 @@ export function HomeCard() {
   ]);
 
   return (
-    // Conteudo principal
     <div className="container5" id={theme}>
-      {/* Responsividade do site */}
       <div className="container-responsiv">
-        {/* apresentação com logo */}
         <HeaderTop />
-        {/* Menu do site */}
         <ComponentNav cards="select-menu" />
-        {/* conteúdo princiapal do site  */}
         <div className="container-main" id={theme}>
           <form action="#">
             <div className="search-x">
@@ -318,13 +316,7 @@ export function HomeCard() {
             </div>
             <div className="backgroundp2">
               {filteredCards.map((card: TCard) => (
-                <CardAxie
-                  key={card.id}
-                  {...{
-                    ...card,
-                    cardId: card.id,
-                  }}
-                />
+                <CardAxie key={card.id} {...card} />
               ))}
             </div>
           </div>

@@ -10,7 +10,7 @@ export enum ECardTypes {
 }
 
 export type TLocalStorageFavorite = {
-  cardId: number;
+  id: number;
   type: keyof typeof ECardTypes;
 };
 
@@ -43,22 +43,22 @@ export default class CardFavoriteStorageHandler {
     return this._cards ? true : false;
   }
 
-  public contains({ cardId, type: cardType }: TLocalStorageFavorite): boolean {
+  public contains({ id: cardId, type: cardType }: TLocalStorageFavorite): boolean {
     return this._cards
       .map(
-        ({ cardId: _cardId, type: _type }) =>
+        ({ id: _cardId, type: _type }) =>
           _cardId === cardId && _type === cardType
       )
       .includes(true);
   }
 
-  public remove({ cardId, type: cardType }: TLocalStorageFavorite): this {
+  public remove({ id: cardId, type: cardType }: TLocalStorageFavorite): this {
     this._cards = this._cards.filter(
-      ({ cardId: savedCardId, type: savedCardType }) =>
+      ({ id: savedCardId, type: savedCardType }) =>
         savedCardId === cardId && savedCardType === cardType
           ? null
           : ({
-              cardId: savedCardId,
+              id: savedCardId,
               type: savedCardType,
             } as TLocalStorageFavorite)
     );
@@ -66,10 +66,10 @@ export default class CardFavoriteStorageHandler {
     return this;
   }
 
-  public add({ cardId, type }: TLocalStorageFavorite): this {
+  public add({ id: cardId, type }: TLocalStorageFavorite): this {
     return (
       void this._cards.unshift({
-        cardId,
+        id: cardId,
         type,
       }),
       this
@@ -105,7 +105,7 @@ export function toggleFavorite({ cardId }: any, type: keyof typeof ECardTypes) {
   addFavorite.classList.toggle("favorite");
 
   const cardData: TLocalStorageFavorite = {
-    cardId,
+    id: cardId,
     type,
   };
 

@@ -17,7 +17,7 @@ export function CardCurse(card: TCurse) {
           <div
             className={
               FavoritedCardsHandler.contains({
-                cardId: card.cardId,
+                id: card.cardId,
                 type: "CURSE",
               })
                 ? "favorite"

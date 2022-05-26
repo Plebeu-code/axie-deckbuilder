@@ -7,7 +7,7 @@ import CharmCards from "../json/cardsCharms.json";
 import { ECardTypes } from "../modules/CardFavoriteHandler";
 
 export type TPageFavorite = {
-  cardId: number;
+  id: number;
   type: keyof typeof ECardTypes;
   card: any;
 };
@@ -19,10 +19,10 @@ class PageFavoriteHandler {
     return this._favorites;
   }
 
-  public remove({ cardId, type }: Omit<TPageFavorite, "card">): this {
+  public remove({ id: cardId, type }: Omit<TPageFavorite, "card">): this {
     return (
       (this._favorites = this._favorites.filter(
-        ({ cardId: _cardId, type: _type, card: _card }) => {
+        ({ id: _cardId, type: _type, card: _card }) => {
           if (cardId !== _cardId && type !== _type)
             return {
               cardId,
@@ -35,13 +35,13 @@ class PageFavoriteHandler {
     );
   }
 
-  public add({ cardId, type }: Omit<TPageFavorite, "card">): this {
+  public add({ id: cardId, type }: Omit<TPageFavorite, "card">): this {
     if (type === "CARD")
       return (
         DefaultCards.forEach((card, cardIndex) =>
           cardId === cardIndex
             ? this._favorites.unshift({
-                cardId,
+                id: cardId,
                 type,
                 card,
               })
@@ -54,7 +54,7 @@ class PageFavoriteHandler {
         CurseCards.forEach((card, cardIndex) =>
           cardId === cardIndex
             ? this._favorites.unshift({
-                cardId,
+                id: cardId,
                 type,
                 card,
               })
@@ -67,7 +67,7 @@ class PageFavoriteHandler {
         ToolCards.forEach((card, cardIndex) =>
           cardId === cardIndex
             ? this._favorites.unshift({
-                cardId,
+                id: cardId,
                 type,
                 card,
               })
@@ -80,7 +80,7 @@ class PageFavoriteHandler {
         RuneCards.forEach((card, cardIndex) =>
           cardId === cardIndex
             ? this._favorites.unshift({
-                cardId,
+                id: cardId,
                 type,
                 card,
               })
@@ -93,7 +93,7 @@ class PageFavoriteHandler {
         CharmCards.forEach((card, cardIndex) =>
           cardId === cardIndex
             ? this._favorites.unshift({
-                cardId,
+                id: cardId,
                 type,
                 card,
               })
@@ -105,11 +105,10 @@ class PageFavoriteHandler {
     return this;
   }
 
-  public contains({ cardId, type }: Omit<TPageFavorite, "card">): boolean {
+  public contains({ id: cardId, type }: Omit<TPageFavorite, "card">): boolean {
     return this._favorites
       .map(
-        ({ cardId: _cardId, type: _type }) =>
-          cardId === _cardId && type === _type
+        ({ id: _cardId, type: _type }) => cardId === _cardId && type === _type
       )
       .includes(true);
   }

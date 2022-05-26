@@ -1,8 +1,7 @@
 export type TCard = {
-  id: number
   name: string;
   description: string | undefined;
-  cardId?: number;
+  id?: number;
   cardInformation: string | undefined;
   cardType: string | undefined;
   action: string | undefined;

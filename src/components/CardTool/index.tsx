@@ -17,7 +17,7 @@ export function CardTool(card: TTool) {
           <div
             className={
               FavoritedCardsHandler.contains({
-                cardId: card.cardId,
+                id: card.cardId,
                 type: "TOOL",
               })
                 ? "favorite"

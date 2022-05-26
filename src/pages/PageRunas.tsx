@@ -5,7 +5,7 @@ import "../style/pageRuna.scss";
 //! Assets | icons && img && svgs
 import search_icon from "../assets/icon/search-icon.svg";
 //!Components
-import { Footer } from "../components/Footer/Footer";
+import { Footer } from "../components/Footer";
 import AxieCardRunes from "../json/cardsRunes.json";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
