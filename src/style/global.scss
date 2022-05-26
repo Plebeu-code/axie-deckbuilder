@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, input, button, textarea {
+  font: 400 16px 'Roboto', sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(-85deg, #1962f0, #356297, #23a6d5, #5c04c2);
+    border-radius: 20px;
+  }
+
+}
