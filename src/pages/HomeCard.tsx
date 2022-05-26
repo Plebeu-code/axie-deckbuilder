@@ -7,7 +7,7 @@ import search_icon from "../assets/icon/search-icon.svg";
 //! Components
 import { CardAxie } from "../components/CardAxie";
 import { TCard } from "../types";
-import DefaultCards from "../json/cardsAxies.json.old2";
+import DefaultCards from "../json/cardsAxies.json";
 import { Footer } from "../components/Footer/Footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
