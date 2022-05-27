@@ -13,7 +13,7 @@ import { ThemeContext } from "../App";
 
 import type { TTool } from "../types";
 
-import { CardRuna } from "../components/CardRuna";
+import { CardRune } from "../components/CardRuna";
 
 export function PageRunas() {
   const [runeNameSearch, setRuneNameSearch] = useState("");
@@ -135,13 +135,8 @@ export function PageRunas() {
               </select>
             </div>
             <div className="backgroundp2" id="grid-space">
-              {filteredRuneCards.map((card: TTool, cardId) => (
-                <CardRuna
-                  {...{
-                    ...card,
-                    cardId,
-                  }}
-                />
+              {filteredRuneCards.map((card: TTool) => (
+                <CardRune key={card.id} {...card} />
               ))}
             </div>
           </div>

@@ -1,7 +1,7 @@
 export type TCard = {
   name: string;
   description: string | undefined;
-  id?: number;
+  id: number;
   cardInformation: string | undefined;
   cardType: string | undefined;
   action: string | undefined;
@@ -12,6 +12,7 @@ export type TCard = {
   tags: BodyPart[] | undefined;
   cardStyle: CardStyle;
   keyWordType: KeyWordType[] | undefined;
+  onClick?: (arg: any) => void;
 };
 
 interface KeyWordType {

@@ -87,14 +87,8 @@ export function PageTool() {
               </select>
             </div>
             <div className="backgroundp2">
-              {filteredCurseCards.map((card: TTool, cardId) => (
-                <CardTool
-                  key={cardId}
-                  {...{
-                    ...card,
-                    cardId,
-                  }}
-                />
+              {filteredCurseCards.map((card: TTool) => (
+                <CardTool key={card.id} {...card} />
               ))}
             </div>
           </div>

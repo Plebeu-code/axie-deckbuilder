@@ -34,10 +34,15 @@
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/tool.png"
     },
     "keyWordType": [
-      { "keyWord": "Retain", "keywordDescription": "None" },
-      { "keyWord": "Cleanse", "keywordDescription": "None" }
-    ],
-    "id": 3434
+      {
+        "keyWord": "Retain",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Cleanse",
+        "keywordDescription": "None"
+      }
+    ]
   },
   {
     "name": "Forest Wrath",
@@ -69,8 +74,12 @@
       "imageCard": "https://www.axie.tech//images/templates/card/art/tool-forestwrath-02.jpg",
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/tool.png"
     },
-    "keyWordType": [{ "keyWord": "None", "keywordDescription": "None" }],
-    "id": 3882
+    "keyWordType": [
+      {
+        "keyWord": "None",
+        "keywordDescription": "None"
+      }
+    ]
   },
   {
     "name": "Lumber Shield",
@@ -111,10 +120,15 @@
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/tool.png"
     },
     "keyWordType": [
-      { "keyWord": "Retain", "keywordDescription": "None" },
-      { "keyWord": "Banish", "keywordDescription": "None" }
-    ],
-    "id": 5422
+      {
+        "keyWord": "Retain",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Banish",
+        "keywordDescription": "None"
+      }
+    ]
   },
   {
     "name": "Pure Water",
@@ -155,10 +169,15 @@
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/tool.png"
     },
     "keyWordType": [
-      { "keyWord": "Retain", "keywordDescription": "None" },
-      { "keyWord": "Banish", "keywordDescription": "None" }
-    ],
-    "id": 6363
+      {
+        "keyWord": "Retain",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Banish",
+        "keywordDescription": "None"
+      }
+    ]
   },
   {
     "name": "Strawberry",
@@ -199,9 +218,14 @@
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/tool.png"
     },
     "keyWordType": [
-      { "keyWord": "Retain", "keywordDescription": "None" },
-      { "keyWord": "Banish", "keywordDescription": "None" }
-    ],
-    "id": 8707
+      {
+        "keyWord": "Retain",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Banish",
+        "keywordDescription": "None"
+      }
+    ]
   }
 ]

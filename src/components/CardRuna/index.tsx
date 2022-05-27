@@ -6,7 +6,7 @@ import "./style.scss";
 
 import { TTool } from "../../types";
 
-export function CardRuna(card: TTool) {
+export function CardRune(card: TTool) {
   return (
     <div className="card-box-runa">
       <div
@@ -16,13 +16,13 @@ export function CardRuna(card: TTool) {
         <div
           className={
             FavoritedCardsHandler.contains({
-              id: card.cardId,
+              id: card.id,
               type: "RUNE",
             })
               ? "favorite"
               : null
           }
-          id={String(card.cardId)}
+          id={String(card.id)}
         >
           <div className="favorite-star">
             <svg

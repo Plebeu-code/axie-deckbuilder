@@ -17,13 +17,13 @@ export function CardCurse(card: TCurse) {
           <div
             className={
               FavoritedCardsHandler.contains({
-                id: card.cardId,
+                id: card.id,
                 type: "CURSE",
               })
                 ? "favorite"
                 : null
             }
-            id={String(card.cardId)}
+            id={String(card.id)}
           >
             <div className="favorite-star">
               <svg

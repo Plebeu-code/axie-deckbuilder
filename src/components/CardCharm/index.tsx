@@ -15,13 +15,13 @@ export function CardCharm(card: TCharm) {
         <div
           className={
             FavoritedCardsHandler.contains({
-              id: card.cardId,
+              id: card.id,
               type: "CHARM",
             })
               ? "favorite"
               : null
           }
-          id={String(card.cardId)}
+          id={String(card.id)}
         >
           <div className="favorite-star">
             <svg

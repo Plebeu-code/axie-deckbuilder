@@ -1,154 +1,29 @@
-//! React
 import { useMemo, useState, useContext } from "react";
-//! Style
 import "../style/homeCard.scss";
-//! Assets
 import search_icon from "../assets/icon/search-icon.svg";
-//! Components
 import { CardAxie } from "../components/CardAxie";
-import { TCard } from "../types";
+import type { TCard } from "../types";
 import DefaultCards from "../json/cardsAxies.json";
 import { Footer } from "../components/Footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
 import { ThemeContext } from "../App";
-import CardFilterHandler from "../modules/CardFilterHandler";
 
-class CardHandler {
-  constructor(protected readonly cached_cards: TCard[]) {}
+import { toggleFavorite } from "../modules/CardFavoriteHandler";
 
-  public get cards() {
-    return this.cached_cards;
-  }
-
-  public formatBy(format: string): this {
-    const formatFunctions = {
-      az: () =>
-        this.cached_cards.sort(
-          ({ name: currentCardName }, { name: nextCardName }) =>
-            currentCardName.localeCompare(nextCardName, "pt-br")
-        ),
-      za: () =>
-        this.cached_cards.sort(
-          ({ name: currentCardName }, { name: nextCardName }) =>
-            nextCardName.localeCompare(currentCardName, "pt-br")
-        ),
-      highestdamage: () =>
-        this.cached_cards
-          .sort(({ status: currentCardStatus }, { status: nextCardStatus }) => {
-            if (!currentCardStatus || !("attack" in currentCardStatus))
-              return -1;
-            if (!nextCardStatus || !("attack" in nextCardStatus)) return 1;
-
-            return (
-              Number(currentCardStatus?.attack?.attackDamage) -
-              Number(nextCardStatus?.attack?.attackDamage)
-            );
-          })
-          .reverse(),
-      lowestdamage: () =>
-        this.cached_cards
-          .sort(({ status: currentCardStatus }, { status: nextCardStatus }) => {
-            if (!currentCardStatus || !("attack" in currentCardStatus))
-              return -1;
-            if (!nextCardStatus || "attack" in nextCardStatus) return 1;
-
-            return (
-              Number(nextCardStatus?.attack?.attackDamage) -
-              Number(currentCardStatus?.attack?.attackDamage)
-            );
-          })
-          .reverse(),
-      highestshield: () =>
-        this.cached_cards
-          .sort(({ status: currentCardStatus }, { status: nextCardStatus }) => {
-            if (!currentCardStatus || !("shield" in currentCardStatus))
-              return -1;
-            if (!nextCardStatus || !("shield" in nextCardStatus)) return 1;
-
-            return (
-              Number(currentCardStatus.shield.shieldDamage) -
-              Number(nextCardStatus.shield.shieldDamage)
-            );
-          })
-          .reverse(),
-      lowestshield: () =>
-        this.cached_cards
-          .sort(({ status: currentCardStatus }, { status: nextCardStatus }) => {
-            if (!currentCardStatus || !("shield" in currentCardStatus))
-              return -1;
-            if (!nextCardStatus || !("shield" in nextCardStatus)) return 1;
-
-            return (
-              Number(nextCardStatus.shield.shieldDamage) -
-              Number(currentCardStatus.shield.shieldDamage)
-            );
-          })
-          .reverse(),
-      highesthealth: () =>
-        this.cached_cards
-          .sort(({ status: currentCardStatus }, { status: nextCardStatus }) => {
-            if (!currentCardStatus || !("healing" in currentCardStatus))
-              return -1;
-            if (!nextCardStatus || !("healing" in nextCardStatus)) return 1;
-
-            return (
-              Number(currentCardStatus.healing.healingAmount) -
-              Number(nextCardStatus.healing.healingAmount)
-            );
-          })
-          .reverse(),
-      lowesthealth: () =>
-        this.cached_cards.sort(
-          ({ status: currentCardStatus }, { status: nextCardStatus }) => {
-            if (!currentCardStatus || !("healing" in currentCardStatus))
-              return 1;
-            if (!nextCardStatus || !("healing" in nextCardStatus)) return -1;
-
-            return (
-              Number(nextCardStatus.healing.healingAmount) -
-              Number(currentCardStatus.healing.healingAmount)
-            );
-          }
-        ),
-      highestenergy: () =>
-        this.cached_cards.sort(
-          (
-            { energyCost: currentCardEnergyCost },
-            { energyCost: nextCardEnergyCost }
-          ) => {
-            return (
-              parseInt(nextCardEnergyCost) - parseInt(currentCardEnergyCost)
-            );
-          }
-        ),
-      lowestenergy: () =>
-        this.cached_cards.sort(
-          (
-            { energyCost: currentCardEnergyCost },
-            { energyCost: nextCardEnergyCost }
-          ) => {
-            return (
-              parseInt(currentCardEnergyCost) - parseInt(nextCardEnergyCost)
-            );
-          }
-        ),
-    };
-    void formatFunctions[format]();
-    return this;
-  }
-}
+import CardFilterListHandler, {
+  type TFilterTypes,
+} from "../modules/CardFilterListHandler";
 
 export function HomeCard() {
+  const { theme } = useContext(ThemeContext);
 
-  let [axieName, setAxieName] = useState(""),
+  const [axieName, setAxieName] = useState(""),
     [axieClassName, setAxieClassName] = useState(""),
     [axieBodyPart, setAxieBodyPart] = useState(""),
     [axieEnergyCost, setAxieEnergyCost] = useState(""),
     [axieTag, setAxieTag] = useState(""),
-    [listFormat, setListFormat] = useState("az");
-
-  const { theme } = useContext(ThemeContext);
+    [listFormat, setListFormat] = useState("az" as keyof typeof TFilterTypes);
 
   const filteredCards = useMemo(() => {
     const hasSearchContent =
@@ -156,11 +31,16 @@ export function HomeCard() {
         ? true
         : false;
 
-    // const cardManager = new CardHandler(DefaultCards as any).formatBy(
-    //   listFormat
-    // );
+    const cardManager = new CardFilterListHandler(DefaultCards).filterBy(
+      listFormat
+    );
 
-    const cardManager = new CardFilterHandler(DefaultCards).filterBy("zA")
+    if (listFormat.startsWith("lowest"))
+      cardManager
+        .filterBy(
+          listFormat.replace("lowest", "highest") as keyof typeof TFilterTypes
+        )
+        .filterBy(listFormat);
 
     return hasSearchContent
       ? cardManager.cards.filter(
@@ -172,13 +52,11 @@ export function HomeCard() {
             tags: cardTags,
           }) =>
             cardName.toLowerCase().includes(axieName.toLowerCase()) &&
-            cardClassName.toLowerCase().includes(axieClassName) &&
-            cardBodyPart.toLowerCase().includes(axieBodyPart) &&
+            cardClassName.includes(axieClassName) &&
+            cardBodyPart.includes(axieBodyPart) &&
             cardEnergyCost.includes(axieEnergyCost) &&
             cardTags
-              .map(({ name: tagName }) =>
-                tagName.toLowerCase().includes(axieTag)
-              )
+              .map(({ name: tagName }) => tagName.includes(axieTag))
               .includes(true)
         )
       : cardManager.cards;
@@ -298,7 +176,11 @@ export function HomeCard() {
               <select
                 name=""
                 id=""
-                onChange={(e) => setListFormat(e.target.value.toLowerCase())}
+                onChange={(e) =>
+                  setListFormat(
+                    e.target.value.toLowerCase() as keyof typeof TFilterTypes
+                  )
+                }
               >
                 <option defaultChecked value="aZ">
                   Nome A - Z
@@ -316,7 +198,11 @@ export function HomeCard() {
             </div>
             <div className="backgroundp2">
               {filteredCards.map((card: TCard) => (
-                <CardAxie key={card.id} {...card} />
+                <CardAxie
+                  onClick={() => toggleFavorite(card, "CARD")}
+                  key={card.id}
+                  {...card}
+                />
               ))}
             </div>
           </div>

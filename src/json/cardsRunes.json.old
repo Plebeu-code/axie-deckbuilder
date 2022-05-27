@@ -11,8 +11,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_mech_hybrid_1.png"
-    },
-    "id": 7756
+    }
   },
   {
     "name": "Arcane Protection",
@@ -26,8 +25,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dawn_defensive_1.png"
-    },
-    "id": 597
+    }
   },
   {
     "name": "Bloodlust",
@@ -41,8 +39,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_aquatic_hybrid_1.png"
-    },
-    "id": 7000
+    }
   },
   {
     "name": "Calcium Armor",
@@ -56,8 +53,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_aquatic_defensive_1.png"
-    },
-    "id": 9849
+    }
   },
   {
     "name": "Celestial Might",
@@ -71,8 +67,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dawn_offensive_1.png"
-    },
-    "id": 2424
+    }
   },
   {
     "name": "Collect And Protect",
@@ -86,8 +81,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bug_utility_1.png"
-    },
-    "id": 2626
+    }
   },
   {
     "name": "Cursed Ritual",
@@ -101,8 +95,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dusk_offensive_1.png"
-    },
-    "id": 8130
+    }
   },
   {
     "name": "Delayed Protection",
@@ -116,8 +109,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_reptile_defensive_1.png"
-    },
-    "id": 6987
+    }
   },
   {
     "name": "Dominant Predator",
@@ -131,8 +123,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_beast_hybrid_1.png"
-    },
-    "id": 8731
+    }
   },
   {
     "name": "Endless Anger",
@@ -146,8 +137,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_beast_utility_1.png"
-    },
-    "id": 2504
+    }
   },
   {
     "name": "Energy Guru",
@@ -161,8 +151,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bird_offensive_1.png"
-    },
-    "id": 9954
+    }
   },
   {
     "name": "Feather Descend",
@@ -176,8 +165,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bird_utility_1.png"
-    },
-    "id": 2083
+    }
   },
   {
     "name": "Gaia's Embrace",
@@ -191,8 +179,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_plant_defensive_1.png"
-    },
-    "id": 1189
+    }
   },
   {
     "name": "Gloomy Dice",
@@ -206,8 +193,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dusk_utility_1.png"
-    },
-    "id": 2795
+    }
   },
   {
     "name": "Healing Pulse",
@@ -221,8 +207,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_plant_utility_1.png"
-    },
-    "id": 3814
+    }
   },
   {
     "name": "Heart of Ocean",
@@ -236,8 +221,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_aquatic_utility_1.png"
-    },
-    "id": 3538
+    }
   },
   {
     "name": "Hearty Warrior",
@@ -251,8 +235,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_aquatic_offensive_1.png"
-    },
-    "id": 2414
+    }
   },
   {
     "name": "Heaven's Echoes",
@@ -266,8 +249,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dawn_hybrid_1.png"
-    },
-    "id": 4225
+    }
   },
   {
     "name": "Holy Prayer",
@@ -281,8 +263,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dawn_utility_1.png"
-    },
-    "id": 5583
+    }
   },
   {
     "name": "Last Stand",
@@ -296,8 +277,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_mech_defensive_1.png"
-    },
-    "id": 9279
+    }
   },
   {
     "name": "Leftover Potion",
@@ -311,8 +291,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_utility_1.png"
-    },
-    "id": 4454
+    }
   },
   {
     "name": "Malediction",
@@ -326,8 +305,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dusk_hybrid_1.png"
-    },
-    "id": 2279
+    }
   },
   {
     "name": "Mini Legion",
@@ -341,8 +319,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_hybrid_1.png"
-    },
-    "id": 9883
+    }
   },
   {
     "name": "Miracle Leaf",
@@ -356,8 +333,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_plant_offensive_1.png"
-    },
-    "id": 8849
+    }
   },
   {
     "name": "Pangolin Scale",
@@ -371,8 +347,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_beast_defensive_1.png"
-    },
-    "id": 8524
+    }
   },
   {
     "name": "Poison Touch",
@@ -386,8 +361,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_reptile_hybrid_1.png"
-    },
-    "id": 7829
+    }
   },
   {
     "name": "Pure Instinct",
@@ -401,8 +375,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_hybrid_2.png"
-    },
-    "id": 3266
+    }
   },
   {
     "name": "Pure Power",
@@ -416,8 +389,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_offensive_2.png"
-    },
-    "id": 6975
+    }
   },
   {
     "name": "Pure Skill",
@@ -431,8 +403,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_defensive_2.png"
-    },
-    "id": 7017
+    }
   },
   {
     "name": "Raven's Tactic",
@@ -446,8 +417,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bird_hybrid_1.png"
-    },
-    "id": 6597
+    }
   },
   {
     "name": "Reckless Hunter",
@@ -461,8 +431,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_beast_offensive_1.png"
-    },
-    "id": 2511
+    }
   },
   {
     "name": "Regenerator",
@@ -476,8 +445,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_reptile_utility_1.png"
-    },
-    "id": 31
+    }
   },
   {
     "name": "Rise And Ruin",
@@ -491,8 +459,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_plant_hybrid_1.png"
-    },
-    "id": 2846
+    }
   },
   {
     "name": "Shady Exchange",
@@ -506,8 +473,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_utility_2.png"
-    },
-    "id": 4736
+    }
   },
   {
     "name": "Shield Backup",
@@ -521,8 +487,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_mech_utility_1.png"
-    },
-    "id": 2150
+    }
   },
   {
     "name": "Shield Leecher",
@@ -536,8 +501,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bug_hybrid_1.png"
-    },
-    "id": 348
+    }
   },
   {
     "name": "Sturdy Fighter",
@@ -551,8 +515,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bug_offensive_1.png"
-    },
-    "id": 9560
+    }
   },
   {
     "name": "Thick Shield",
@@ -566,8 +529,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_defensive_1.png"
-    },
-    "id": 6872
+    }
   },
   {
     "name": "Tough Strike",
@@ -581,8 +543,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_neutral_offensive_1.png"
-    },
-    "id": 3397
+    }
   },
   {
     "name": "Vault Builder",
@@ -596,8 +557,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bug_defensive_1.png"
-    },
-    "id": 4611
+    }
   },
   {
     "name": "Venom Born",
@@ -611,8 +571,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_bird_defensive_1.png"
-    },
-    "id": 8783
+    }
   },
   {
     "name": "Venom Master",
@@ -626,8 +585,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_reptile_offensive_1.png"
-    },
-    "id": 2864
+    }
   },
   {
     "name": "Wicked Ward",
@@ -641,8 +599,7 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_dusk_defensive_1.png"
-    },
-    "id": 9291
+    }
   },
   {
     "name": "Zap Armor",
@@ -656,7 +613,6 @@
     "cardStyle": {
       "backgroundCard": "https://www.axie.tech/images/templates/rune/background.png",
       "imageCard": "https://www.axie.tech//images/templates/rune/art/rune_mech_offensive_1.png"
-    },
-    "id": 5879
+    }
   }
 ]

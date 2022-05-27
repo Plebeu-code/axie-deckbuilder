@@ -34,10 +34,15 @@
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
     },
     "keyWordType": [
-      { "keyWord": "Taunt", "keywordDescription": "None" },
-      { "keyWord": "Banish", "keywordDescription": "None" }
-    ],
-    "id": 5243
+      {
+        "keyWord": "Taunt",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Banish",
+        "keywordDescription": "None"
+      }
+    ]
   },
   {
     "name": "Burn",
@@ -74,10 +79,15 @@
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
     },
     "keyWordType": [
-      { "keyWord": "Unplayable", "keywordDescription": "None" },
-      { "keyWord": "Ethereal", "keywordDescription": "None" }
-    ],
-    "id": 8490
+      {
+        "keyWord": "Unplayable",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Ethereal",
+        "keywordDescription": "None"
+      }
+    ]
   },
   {
     "name": "Confused",
@@ -114,10 +124,15 @@
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
     },
     "keyWordType": [
-      { "keyWord": "Unplayable", "keywordDescription": "None" },
-      { "keyWord": "Ethereal", "keywordDescription": "None" }
-    ],
-    "id": 3468
+      {
+        "keyWord": "Unplayable",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Ethereal",
+        "keywordDescription": "None"
+      }
+    ]
   },
   {
     "name": "Daze",
@@ -149,8 +164,12 @@
       "imageCard": "https://www.axie.tech//images/templates/card/art/tool-daze-02.jpg",
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
     },
-    "keyWordType": [{ "keyWord": "Unplayable", "keywordDescription": "None" }],
-    "id": 5361
+    "keyWordType": [
+      {
+        "keyWord": "Unplayable",
+        "keywordDescription": "None"
+      }
+    ]
   },
   {
     "name": "Goo",
@@ -182,8 +201,12 @@
       "imageCard": "https://www.axie.tech//images/templates/card/art/tool-goo-02.jpg",
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
     },
-    "keyWordType": [{ "keyWord": "Banish", "keywordDescription": "None" }],
-    "id": 9308
+    "keyWordType": [
+      {
+        "keyWord": "Banish",
+        "keywordDescription": "None"
+      }
+    ]
   },
   {
     "name": "Jinx",
@@ -220,10 +243,15 @@
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
     },
     "keyWordType": [
-      { "keyWord": "Unplayable", "keywordDescription": "None" },
-      { "keyWord": "Ethereal", "keywordDescription": "None" }
-    ],
-    "id": 212
+      {
+        "keyWord": "Unplayable",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Ethereal",
+        "keywordDescription": "None"
+      }
+    ]
   },
   {
     "name": "Void",
@@ -260,10 +288,18 @@
       "imageBottomCard": "https://www.axie.tech/images/templates/card/gradients/curse.png"
     },
     "keyWordType": [
-      { "keyWord": "Unplayable", "keywordDescription": "None" },
-      { "keyWord": "Ethereal", "keywordDescription": "None" },
-      { "keyWord": "Void", "keywordDescription": "None" }
-    ],
-    "id": 9130
+      {
+        "keyWord": "Unplayable",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Ethereal",
+        "keywordDescription": "None"
+      },
+      {
+        "keyWord": "Void",
+        "keywordDescription": "None"
+      }
+    ]
   }
 ]

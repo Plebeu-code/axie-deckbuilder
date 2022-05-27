@@ -62,7 +62,7 @@ export function CustomizedSwitches() {
   return (
     <FormControlLabel
       control={<MaterialUISwitch sx={{ m: 1 }} onChange={() => toggleStyle()} />}
-      checked={verifyMode}
+      checked={!verifyMode}
       label=""
     />
   );

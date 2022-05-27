@@ -109,8 +109,8 @@ export function PageCharm() {
               </select>
             </div>
             <div className="backgroundp2" id="grid-space">
-              {JsonCharms.map((card: TCharm, cardId) => (
-                <CardCharm key={cardId} {...{ ...card, cardId }} />
+              {JsonCharms.map((card: TCharm) => (
+                <CardCharm key={card.id} {...card} />
               ))}
             </div>
           </div>

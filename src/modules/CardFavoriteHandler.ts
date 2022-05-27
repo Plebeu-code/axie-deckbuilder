@@ -1,4 +1,3 @@
-import React from "react";
 import { pageFavoriteHandler } from "./PageFavoriteHandler";
 
 export enum ECardTypes {
@@ -43,7 +42,10 @@ export default class CardFavoriteStorageHandler {
     return this._cards ? true : false;
   }
 
-  public contains({ id: cardId, type: cardType }: TLocalStorageFavorite): boolean {
+  public contains({
+    id: cardId,
+    type: cardType,
+  }: TLocalStorageFavorite): boolean {
     return this._cards
       .map(
         ({ id: _cardId, type: _type }) =>
@@ -100,12 +102,12 @@ export default class CardFavoriteStorageHandler {
 
 export const FavoritedCardsHandler = new CardFavoriteStorageHandler();
 
-export function toggleFavorite({ cardId }: any, type: keyof typeof ECardTypes) {
-  const addFavorite = document.getElementById(String(cardId));
+export function toggleFavorite({ id }: any, type: keyof typeof ECardTypes) {
+  const addFavorite = document.getElementById(String(id));
   addFavorite.classList.toggle("favorite");
 
   const cardData: TLocalStorageFavorite = {
-    id: cardId,
+    id: id,
     type,
   };
 
@@ -113,14 +115,8 @@ export function toggleFavorite({ cardId }: any, type: keyof typeof ECardTypes) {
     return FavoritedCardsHandler.mount().add(cardData).save();
 
   if (FavoritedCardsHandler.contains(cardData)) {
-    return (
-      FavoritedCardsHandler.remove(cardData).save(),
-      pageFavoriteHandler.remove(cardData)
-    );
+    return FavoritedCardsHandler.remove(cardData).save();
   }
 
-  return (
-    FavoritedCardsHandler.add(cardData).save(),
-    pageFavoriteHandler.add(cardData)
-  );
+  return FavoritedCardsHandler.add(cardData).save();
 }

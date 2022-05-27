@@ -1,6 +1,6 @@
 export type TTool = {
   name: string;
-  cardId?: number;
+  id: number;
   description: string | undefined ;
   cardInformation: string | undefined;
   energyCost: string | undefined;

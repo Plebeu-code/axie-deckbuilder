@@ -6,33 +6,33 @@ import "../style/pageRuna.scss";
 import { Footer } from "../components/Footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
-import { PageFavoriteContext, ThemeContext } from "../App";
+import { ThemeContext } from "../App";
 
 import { FavoritedCardsHandler } from "../modules/CardFavoriteHandler";
-import { pageFavoriteHandler } from "../modules/PageFavoriteHandler";
 
-import { CardFavorite } from "../components/CardFavorite";
+import { CardAxie } from "../components/CardAxie";
+import { CardCurse } from "../components/CardCurse";
+import { CardTool } from "../components/CardTool";
+import { CardCharm } from "../components/CardCharm";
+import { CardRune } from "../components/CardRuna";
+
+import cardAxies from "../json/cardsAxies.json";
+import cardCurses from "../json/cardsCurses.json";
+import cardTools from "../json/cardsTools.json";
+import cardRune from "../json/cardsRunes.json";
+import cardCharm from "../json/cardsCharms.json";
 
 export function PageFavorite() {
   const { theme } = useContext(ThemeContext);
 
-  const [pageData, setPageData] = useState(pageFavoriteHandler.data);
+  const [] = useState();
 
-  const { favorites, toggleFavorites } = useContext(PageFavoriteContext);
-
-  FavoritedCardsHandler.cards.forEach(({ id: cardId, type }) => {
-    if (
-      !pageFavoriteHandler.contains({
-        id: cardId,
-        type,
-      })
-    ) {
-      return pageFavoriteHandler.add({
-        id: cardId,
-        type,
-      });
-    }
-  });
+  const favoritedCards = FavoritedCardsHandler.cards.filter(
+    ({ type: _type }) => _type === "CARD"
+  );
+  const favoritedCurses = FavoritedCardsHandler.cards.filter(
+    ({ type: _type }) => _type === "CURSE"
+  );
 
   return (
     <div className="container5" id={theme}>
@@ -41,16 +41,30 @@ export function PageFavorite() {
         <ComponentNav favorites="select-menu" />
         <div className="container-main" id={theme}>
           <div className="backgrundp1">
-            <div className="backgroundp23">
-              <PageFavoriteContext.Provider
-                value={{ favorites, toggleFavorites }}
-              >
-                {/* {favorites.map((cardData) => (
-                  <CardFavorite {...cardData} />
-                ))} */
-                }
-              </PageFavoriteContext.Provider>
-            </div>
+            {favoritedCards.length > 0 ? (
+              <div className="favorite-cards">
+                <h1>{favoritedCards.length} Cards</h1>
+                {FavoritedCardsHandler.cards.map(({ id: _id, type: _type }) => {
+                  if (_type !== "CARD") return;
+                  const [card] = cardAxies.filter(
+                    ({ id }) => id === _id
+                  ) as any;
+                  return <CardAxie onClick={(e) => console.log(e)} key={_id} {...card} />;
+                })}
+              </div>
+            ) : null}
+            {favoritedCurses.length > 0 ? (
+              <div className="favorite-cards">
+                <h1>{favoritedCurses.length} Curses</h1>
+                {FavoritedCardsHandler.cards.map(({ id: _id, type: _type }) => {
+                  if (_type !== "CURSE") return;
+                  const [card] = cardCurses.filter(
+                    ({ id }) => id === _id
+                  ) as any;
+                  return <CardCurse key={_id} {...card} />;
+                })}
+              </div>
+            ) : null}
           </div>
           <Footer />
         </div>

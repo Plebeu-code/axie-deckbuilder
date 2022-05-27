@@ -17,13 +17,13 @@ export function CardTool(card: TTool) {
           <div
             className={
               FavoritedCardsHandler.contains({
-                id: card.cardId,
+                id: card.id,
                 type: "TOOL",
               })
                 ? "favorite"
                 : null
             }
-            id={String(card.cardId)}
+            id={String(card.id)}
           >
             <div className="favorite-star">
               <svg

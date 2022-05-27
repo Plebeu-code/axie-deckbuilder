@@ -85,14 +85,8 @@ export function PageCurse() {
               </select>
             </div>
             <div className="backgroundp2">
-              {filteredCurseCards.map((card: TCurse, cardId) => (
-                <CardCurse
-                  key={cardId}
-                  {...{
-                    ...card,
-                    cardId,
-                  }}
-                />
+              {filteredCurseCards.map((card: TCurse) => (
+                <CardCurse key={card.id} {...card} />
               ))}
             </div>
           </div>

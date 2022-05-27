@@ -9,14 +9,11 @@ import {
   FavoritedCardsHandler,
 } from "../../modules/CardFavoriteHandler";
 
-
-
-
 export function CardAxie(card: TCard) {
   return (
     <div className="box-card-root">
       <div className="box-card-sub-root">
-        <div className="box-card" onClick={() => toggleFavorite(card, "CARD")}>
+        <div className="box-card" onClick={card.onClick}>
           <div
             className={
               FavoritedCardsHandler.contains({

@@ -1,6 +1,6 @@
 export type TCharm = {
   name: string;
-  cardId?: number
+  id: number
   description: string;
   cardInformation: string;
   energyCost: string;

@@ -22,14 +22,14 @@ class PageFavoriteHandler {
   public remove({ id: cardId, type }: Omit<TPageFavorite, "card">): this {
     return (
       (this._favorites = this._favorites.filter(
-        ({ id: _cardId, type: _type, card: _card }) => {
-          if (cardId !== _cardId && type !== _type)
-            return {
-              cardId,
-              type,
-              card: _card,
-            };
-        }
+        ({ id: _cardId, type: _type, card: _card }) =>
+          cardId !== _cardId && type !== _type
+            ? {
+                cardId,
+                type,
+                card: _card,
+              }
+            : null
       )),
       this
     );
