@@ -6,7 +6,7 @@ import "../style/pageCharm.scss";
 import search_icon from "../assets/icon/search-icon.svg";
 //!Components
 import axieToolCards from "../json/cardsTools.json";
-import { Footer } from "../components/Footer";
+import { Footer } from "../components/footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
 import { ThemeContext } from "../App";

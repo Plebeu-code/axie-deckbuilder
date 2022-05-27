@@ -4,7 +4,7 @@ import search_icon from "../assets/icon/search-icon.svg";
 import { CardAxie } from "../components/CardAxie";
 import type { TCard } from "../types";
 import DefaultCards from "../json/cardsAxies.json";
-import { Footer } from "../components/Footer";
+import { Footer } from "../components/footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
 import { ThemeContext } from "../App";

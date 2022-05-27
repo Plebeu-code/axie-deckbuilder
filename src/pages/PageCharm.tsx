@@ -5,7 +5,7 @@ import "../style/pageCharm.scss";
 //! Assets | icons && img && svgs
 import search_icon from "../assets/icon/search-icon.svg";
 //!Components
-import { Footer } from "../components/Footer";
+import { Footer } from "../components/footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import JsonCharms from "../json/cardsCharms.json";
 import { HeaderTop } from "../components/Header/HeaderTop";

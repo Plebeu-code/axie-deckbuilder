@@ -2,7 +2,7 @@ import { useContext } from "react";
 //! Style
 import "../style/pageRuna.scss";
 //!Components
-import { Footer } from "../components/Footer";
+import { Footer } from "../components/footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
 import { ThemeContext } from "../App";
