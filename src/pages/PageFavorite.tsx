@@ -49,7 +49,7 @@ export function PageFavorite() {
                   const [card] = cardAxies.filter(
                     ({ id }) => id === _id
                   ) as any;
-                  return <CardAxie onClick={(e) => console.log(e)} key={_id} {...card} />;
+                  return <CardAxie onClick={(e) => {}} key={_id} {...card} />;
                 })}
               </div>
             ) : null}
