@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blaka&display=swap");
+
 $color-header: #e9eff7;
 $color-background-menu: #e2ecf6;
 $color-main-background: #edf3f9;
@@ -104,7 +106,7 @@ $color-main-menu-text: rgba(13, 4, 4, 0.267);
       #background-favorite {
         padding-bottom: 90px;
       }
-      
+
       .backgrundp1 {
         background-color: $color-main-background;
         height: 90%;
@@ -134,19 +136,47 @@ $color-main-menu-text: rgba(13, 4, 4, 0.267);
           width: 100%;
           grid-row-gap: 70px;
 
-          > h1 {
+          .animation-placa {
             position: absolute;
             top: -21px;
             left: 50%;
-            transform: translate(-50%, -50%);
-            color: rgb(27, 16, 126);
-            padding: 5px 40px;
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.35);
-            box-shadow: 0 8px 32px 0 rgba(56, 59, 104, 0.37);
-            backdrop-filter: blur(13.5px);
-            -webkit-backdrop-filter: blur(13.5px);
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            width: 200px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-50%, -50%);
+
+            .animation-placa-img {
+              position: relative;
+              width: 100%;
+              height: 100%;
+
+              > img {
+                position: absolute;
+                height: 120px;
+                z-index: 1;
+                transform: translate(-50%, -50%);
+                left: 50%;
+
+              }
+
+              > h1 {
+                position: absolute;
+                left: 55%;
+                top: -30px;
+                width: 100%;
+                color: rgb(255, 255, 255);
+                font-family: 'Blaka', cursive;
+                font-size: 45px;
+                font-weight: 400;
+                letter-spacing: 3px;
+                z-index: 99;
+                transform: translate(-50%, -50%);
+
+              }
+            }
           }
         }
 
@@ -162,19 +192,46 @@ $color-main-menu-text: rgba(13, 4, 4, 0.267);
           justify-content: center;
           width: 100%;
 
-          > h1 {
+          .animation-placa {
             position: absolute;
             top: -21px;
             left: 50%;
-            transform: translate(-50%, -50%);
-            color: rgb(27, 16, 126);
-            padding: 5px 40px;
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.35);
-            box-shadow: 0 8px 32px 0 rgba(56, 59, 104, 0.37);
-            backdrop-filter: blur(13.5px);
-            -webkit-backdrop-filter: blur(13.5px);
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            width: 200px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-50%, -50%);
+
+            .animation-placa-img {
+              position: relative;
+              width: 100%;
+              height: 100%;
+
+              > img {
+                position: absolute;
+                height: 120px;
+                z-index: 1;
+                transform: translate(-50%, -50%);
+                left: 50%;
+
+              }
+
+              > h1 {
+                position: absolute;
+                left: 60%;
+                top: -30px;
+                width: 100% ;
+                color: rgb(255, 255, 255);
+                font-family: 'Blaka', cursive;
+                font-size: 45px;
+                font-weight: 400;
+                letter-spacing: 3px;
+                z-index: 99;
+                transform: translate(-50%, -50%);
+              }
+            }
           }
         }
 
@@ -186,20 +243,17 @@ $color-main-menu-text: rgba(13, 4, 4, 0.267);
           margin-bottom: 30px;
           margin-left: 2%;
           background-color: $color-main-3-background;
-
         }
 
         .backgroundp23 {
           display: flex;
           max-width: 95%;
-          
+
           flex-direction: column;
           margin-bottom: 30px;
           margin-left: 9%;
           margin-top: 50px;
           position: relative;
-
-
         }
 
         .aAz {

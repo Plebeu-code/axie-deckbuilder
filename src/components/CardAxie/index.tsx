@@ -103,14 +103,14 @@ export function CardAxie(card: TCard) {
                   );
               })()
             : undefined}
-          {card.cardInformation ? (
+          {/* {card.cardInformation ? (
             <div className="box-card-notification-icon">
               <span>i</span>
               <span className="box-card-notification-description">
                 {card.cardInformation}
               </span>
             </div>
-          ) : undefined}
+          ) : undefined} */}
           <div className="card-box-img-top-energy">
             <div className="card-box-background-energy">
               <img src={frameEnergy} alt="Img Energy Axue" />

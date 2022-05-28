@@ -5,7 +5,7 @@ import "../style/pageCharm.scss";
 //! Assets | icons && img && svgs
 import search_icon from "../assets/icon/search-icon.svg";
 //!Components
-import axieToolCards from "../json/cardsTools.json";
+import AxieToolCards from "../json/cardsTools.json";
 import { Footer } from "../components/footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
@@ -16,6 +16,9 @@ import { TTool } from "../types";
 import { CardTool } from "../components/CardTool";
 
 import { toggleFavorite } from "../modules/CardFavoriteHandler";
+import CardFilterListHandler, {
+  TFilterTypes,
+} from "../modules/CardFilterListHandler";
 
 export function PageTool() {
   const [toolNameSearch, setToolNameSearch] = useState("");
@@ -25,26 +28,15 @@ export function PageTool() {
   const filteredCurseCards = useMemo(() => {
     const hasSearchContent = toolNameSearch ? true : false;
 
-    const listFormatFunctions = {
-      az: () =>
-        axieToolCards.sort(
-          ({ name: currentToolCardName }, { name: nextToolCardName }) =>
-            currentToolCardName.localeCompare(nextToolCardName, "pt-br")
-        ),
-      za: () =>
-        axieToolCards.sort(
-          ({ name: currentToolCardName }, { name: nextToolCardName }) =>
-            nextToolCardName.localeCompare(currentToolCardName, "pt-br")
-        ),
-    };
-
-    void listFormatFunctions[listFormat]();
+    const cardManager = new CardFilterListHandler(AxieToolCards).filterBy(
+      listFormat as keyof typeof TFilterTypes
+    );
 
     return hasSearchContent
-      ? axieToolCards.filter(({ name: toolCardName }: TTool) =>
+      ? cardManager.cards.filter(({ name: toolCardName }: TTool) =>
           toolCardName.toLowerCase().includes(toolNameSearch.toLowerCase())
         )
-      : axieToolCards;
+      : cardManager.cards;
   }, [toolNameSearch, listFormat]);
 
   return (

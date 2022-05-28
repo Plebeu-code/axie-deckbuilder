@@ -15,6 +15,9 @@ import { HeaderTop } from "../components/Header/HeaderTop";
 import { ThemeContext } from "../App";
 
 import { toggleFavorite } from "../modules/CardFavoriteHandler";
+import CardFilterListHandler, {
+  TFilterTypes,
+} from "../modules/CardFilterListHandler";
 
 export function PageCurse() {
   const [axieNameSearch, setAxieNameSearch] = useState("");
@@ -24,26 +27,15 @@ export function PageCurse() {
   const filteredCurseCards = useMemo(() => {
     const hasSearchContent = axieNameSearch ? true : false;
 
-    const listFormatFunctions = {
-      az: () =>
-        AxieCurseCards.sort(
-          ({ name: currentCursedCardName }, { name: nextCursedCardName }) =>
-            currentCursedCardName.localeCompare(nextCursedCardName, "pt-br")
-        ),
-      za: () =>
-        AxieCurseCards.sort(
-          ({ name: currentCursedCardName }, { name: nextCursedCardName }) =>
-            nextCursedCardName.localeCompare(currentCursedCardName, "pt-br")
-        ),
-    };
-
-    void listFormatFunctions[listFormat]();
+    const cardManager = new CardFilterListHandler(AxieCurseCards).filterBy(
+      listFormat as keyof typeof TFilterTypes
+    );
 
     return hasSearchContent
-      ? AxieCurseCards.filter(({ name: curseCardName }: TCurse) =>
+      ? cardManager.cards.filter(({ name: curseCardName }: TCurse) =>
           curseCardName.toLowerCase().includes(axieNameSearch.toLowerCase())
         )
-      : AxieCurseCards;
+      : cardManager.cards;
   }, [axieNameSearch, listFormat]);
 
   return (

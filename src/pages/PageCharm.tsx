@@ -1,5 +1,5 @@
 //! React
-import { useState, useContext } from "react";
+import { useState, useContext, useMemo } from "react";
 //! Style
 import "../style/pageCharm.scss";
 //! Assets | icons && img && svgs
@@ -7,7 +7,7 @@ import search_icon from "../assets/icon/search-icon.svg";
 //!Components
 import { Footer } from "../components/footer";
 import { ComponentNav } from "../components/Nav/ComponentNav";
-import JsonCharms from "../json/cardsCharms.json";
+import AxieCharmsCards from "../json/cardsCharms.json";
 import { HeaderTop } from "../components/Header/HeaderTop";
 import { ThemeContext } from "../App";
 
@@ -16,19 +16,48 @@ import { CardCharm } from "../components/CardCharm";
 
 import { toggleFavorite } from "../modules/CardFavoriteHandler";
 
+import CardFilterListHandler, {
+  TFilterTypes,
+} from "../modules/CardFilterListHandler";
+
 export function PageCharm() {
+  const { theme } = useContext(ThemeContext);
+
   const [rarityRuneSearch, setRarityRuneSearch] = useState("");
   const [axieNameSearch, setAxieNameSearch] = useState("");
   const [axieClassNameSearch, setClassNameSearch] = useState("");
-  const [axieBodyPartSearch, setAxieBodyPart] = useState("");
   const [energySearch, setEnergySearch] = useState("");
-  const [tagSearch, setTag] = useState("");
-  const { theme } = useContext(ThemeContext);
+  const [listFormat, setListFormat] = useState("az");
 
-  if (axieClassNameSearch.toLowerCase() === "classe") setClassNameSearch("");
-  if (axieBodyPartSearch.toLowerCase() === "Part Type") setClassNameSearch("");
-  if (energySearch.toLowerCase() === "Energy Cost") setClassNameSearch("");
-  if (tagSearch.toLowerCase() === "tag") setClassNameSearch("");
+  console.log(energySearch)
+
+  const filteredCards = useMemo(() => {
+    const hasSearchContent =
+      rarityRuneSearch || axieNameSearch || axieClassNameSearch || energySearch
+        ? true
+        : false;
+
+    const cardManager = new CardFilterListHandler(AxieCharmsCards).filterBy(
+      listFormat as keyof typeof TFilterTypes
+    );
+
+    return hasSearchContent
+      ? cardManager.cards.filter(
+          ({ name, class: { name: className }, energyCost }) =>
+            name.toLowerCase().includes(axieNameSearch) &&
+            className
+              .toLowerCase()
+              .includes(axieClassNameSearch.toLowerCase()) &&
+            energyCost.includes(energySearch)
+        )
+      : cardManager.cards;
+  }, [
+    rarityRuneSearch,
+    axieNameSearch,
+    axieClassNameSearch,
+    energySearch,
+    listFormat,
+  ]);
 
   return (
     <div className="container5" id={theme}>
@@ -47,7 +76,9 @@ export function PageCharm() {
                 id=""
                 placeholder="Search cards"
                 value={axieNameSearch}
-                onChange={(e) => setAxieNameSearch(e.target.value)}
+                onChange={(e) =>
+                  setAxieNameSearch(e.target.value.toLowerCase())
+                }
               />
               <img src={search_icon} alt="" />
             </div>
@@ -57,7 +88,13 @@ export function PageCharm() {
               <select
                 name=""
                 id=""
-                onChange={(e) => setClassNameSearch(e.target.value)}
+                onChange={(e) =>
+                  setClassNameSearch(
+                    e.target.value === "Classe"
+                      ? ""
+                      : e.target.value.toLowerCase()
+                  )
+                }
               >
                 <option defaultChecked>Classe</option>
                 <option value="aquatic">Aquatic</option>
@@ -90,9 +127,13 @@ export function PageCharm() {
               <select
                 name=""
                 id=""
-                onChange={(e) => setEnergySearch(e.target.value)}
+                onChange={(e) =>
+                  setEnergySearch(
+                    e.target.value === "Energy Cost" ? "" : e.target.value
+                  )
+                }
               >
-                <option value="nada">Energy Cost</option>
+                <option value="">Energy Cost</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -103,7 +144,11 @@ export function PageCharm() {
           <div className="backgrundp1">
             <div className="aAz">
               <i className="fa-solid fa-caret-down"></i>
-              <select name="" id="">
+              <select
+                onChange={(e) => setListFormat(e.target.value.toLowerCase())}
+                name=""
+                id=""
+              >
                 <option defaultChecked value="aZ">
                   Nome A - Z
                 </option>
@@ -111,7 +156,7 @@ export function PageCharm() {
               </select>
             </div>
             <div className="backgroundp2" id="grid-space">
-              {JsonCharms.map((card: TCharm) => (
+              {filteredCards.map((card: TCharm) => (
                 <CardCharm
                   onClick={() => toggleFavorite(card, "CHARM")}
                   key={card.id}

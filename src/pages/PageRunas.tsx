@@ -16,6 +16,7 @@ import type { TTool } from "../types";
 import { CardRune } from "../components/CardRuna";
 
 import { toggleFavorite } from "../modules/CardFavoriteHandler";
+import CardFilterListHandler, { TFilterTypes } from "../modules/CardFilterListHandler";
 
 export function PageRunas() {
   const [runeNameSearch, setRuneNameSearch] = useState("");
@@ -28,25 +29,14 @@ export function PageRunas() {
     const hasSearchContent =
       runeNameSearch || runeClassNameSearch || rarityRuneSearch ? true : false;
 
-    const listFormatFunctions = {
-      az: () =>
-        AxieCardRunes.sort(
-          ({ name: currentRuneCardName }, { name: nextRuneCardName }) =>
-            currentRuneCardName.localeCompare(nextRuneCardName, "pt-br")
-        ),
-      za: () =>
-        AxieCardRunes.sort(
-          ({ name: currentRuneCardName }, { name: nextRuneCardName }) =>
-            nextRuneCardName.localeCompare(currentRuneCardName, "pt-br")
-        ),
-    };
-
-    void listFormatFunctions[listFormat]();
+    const cardManager = new CardFilterListHandler(AxieCardRunes).filterBy(
+      listFormat as keyof typeof TFilterTypes
+    );
 
     console.log(runeNameSearch, runeClassNameSearch, rarityRuneSearch);
 
     return hasSearchContent
-      ? AxieCardRunes.filter(
+      ? cardManager.cards.filter(
           ({
             name: runeCardName,
             class: { name: runeCardClassName },
@@ -56,7 +46,7 @@ export function PageRunas() {
             runeCardClassName.toLowerCase().includes(runeClassNameSearch)
           // cardRarity.toLowerCase().includes(rarityRuneSearch)
         )
-      : AxieCardRunes;
+      : cardManager.cards;
   }, [runeNameSearch, runeClassNameSearch, rarityRuneSearch, listFormat]);
 
   return (

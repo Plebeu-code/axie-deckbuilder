@@ -25,6 +25,8 @@ import CardTools from "../json/cardsTools.json";
 import CardRunes from "../json/cardsRunes.json";
 import CardCharms from "../json/cardsCharms.json";
 
+import place from "../assets/icon/placa.png";
+
 export function PageFavorite() {
   const { theme } = useContext(ThemeContext);
 
@@ -47,11 +49,16 @@ export function PageFavorite() {
           <div className="backgrundp1" id="background-favorite">
             {cards.length > 0 ? (
               <div className="favorite-cards">
-                <h1>
-                  {cards.length > 1
-                    ? `${cards.length} Cards`
-                    : `${cards.length} Card`}
-                </h1>
+                <div className="animation-placa">
+                  <div className="animation-placa-img">
+                    <img src={place} alt="Icon" />
+                    <h1>
+                      {cards.length > 1
+                        ? `${cards.length} Cards`
+                        : `${cards.length} Card`}
+                    </h1>
+                  </div>
+                </div>
                 {cards.map(({ id: $id }) => {
                   const [cardData] = CardAxies.filter(
                     ({ id }) => id === $id
@@ -72,11 +79,17 @@ export function PageFavorite() {
             ) : null}
             {curses.length > 0 ? (
               <div className="favorite-cards">
-                <h1>
-                  {curses.length > 1
-                    ? `${curses.length} Curses`
-                    : `${curses.length} Curse`}
-                </h1>
+                <div className="animation-placa">
+                  <div className="animation-placa-img">
+                    <img src={place} alt="Icon" />
+
+                    <h1>
+                      {curses.length > 1
+                        ? `${curses.length} Curses`
+                        : `${curses.length} Curse`}
+                    </h1>
+                  </div>
+                </div>
                 {curses.map(({ id: $id }) => {
                   const [cardData] = CardCurses.filter(
                     ({ id }) => id === $id
@@ -97,11 +110,17 @@ export function PageFavorite() {
             ) : null}
             {tools.length > 0 ? (
               <div className="favorite-cards">
-                <h1>
-                  {tools.length > 1
-                    ? `${tools.length} Tools`
-                    : `${tools.length} Tool`}
-                </h1>
+                <div className="animation-placa">
+                  <div className="animation-placa-img">
+                    <img src={place} alt="Icon" />
+
+                    <h1>
+                      {tools.length > 1
+                        ? `${tools.length} Tools`
+                        : `${tools.length} Tool`}
+                    </h1>
+                  </div>
+                </div>
                 {tools.map(({ id: $id }) => {
                   const [cardData] = CardTools.filter(
                     ({ id }) => id === $id
@@ -122,11 +141,16 @@ export function PageFavorite() {
             ) : null}
             {runes.length > 0 ? (
               <div className="favorite-runes">
-                <h1>
-                  {runes.length > 1
-                    ? `${runes.length} Runes`
-                    : `${runes.length} Rune`}
-                </h1>
+                <div className="animation-placa">
+                  <div className="animation-placa-img">
+                    <img src={place} alt="Icon" />
+                    <h1>
+                      {runes.length > 1
+                        ? `${runes.length} Runes`
+                        : `${runes.length} Rune`}
+                    </h1>
+                  </div>
+                </div>
                 {runes.map(({ id: $id }) => {
                   const [cardData] = CardRunes.filter(
                     ({ id }) => id === $id
@@ -147,11 +171,17 @@ export function PageFavorite() {
             ) : null}
             {charms.length > 0 ? (
               <div className="favorite-runes">
-                <h1>
-                  {charms.length > 1
-                    ? `${charms.length} Charms`
-                    : `${charms.length} Charm`}
-                </h1>
+                <div className="animation-placa">
+                  <div className="animation-placa-img">
+                    <img src={place} alt="Icon" />
+
+                    <h1>
+                      {charms.length > 1
+                        ? `${charms.length} Charms`
+                        : `${charms.length} Charm`}
+                    </h1>
+                  </div>
+                </div>
                 {charms.map(({ id: $id }) => {
                   const [cardData] = CardCharms.filter(
                     ({ id }) => id === $id
