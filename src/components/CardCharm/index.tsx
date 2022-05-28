@@ -10,7 +10,7 @@ export function CardCharm(card: TCharm) {
     <div className="card-box-runa">
       <div
         className="card-box-root"
-        onClick={() => toggleFavorite(card, "CHARM")}
+        onClick={card.onClick}
       >
         <div
           className={

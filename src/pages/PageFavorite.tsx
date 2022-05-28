@@ -8,7 +8,10 @@ import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
 import { ThemeContext } from "../App";
 
-import { FavoritedCardsHandler } from "../modules/CardFavoriteHandler";
+import {
+  FavoritedCardsHandler,
+  toggleFavorite,
+} from "../modules/CardFavoriteHandler";
 
 import { CardAxie } from "../components/CardAxie";
 import { CardCurse } from "../components/CardCurse";
@@ -16,23 +19,24 @@ import { CardTool } from "../components/CardTool";
 import { CardCharm } from "../components/CardCharm";
 import { CardRune } from "../components/CardRuna";
 
-import cardAxies from "../json/cardsAxies.json";
-import cardCurses from "../json/cardsCurses.json";
-import cardTools from "../json/cardsTools.json";
-import cardRune from "../json/cardsRunes.json";
-import cardCharm from "../json/cardsCharms.json";
+import CardAxies from "../json/cardsAxies.json";
+import CardCurses from "../json/cardsCurses.json";
+import CardTools from "../json/cardsTools.json";
+import CardRunes from "../json/cardsRunes.json";
+import CardCharms from "../json/cardsCharms.json";
 
 export function PageFavorite() {
   const { theme } = useContext(ThemeContext);
 
-  const [] = useState();
+  const [favoritedCards, setFavoritedCards] = useState(
+    FavoritedCardsHandler.cards
+  );
 
-  const favoritedCards = FavoritedCardsHandler.cards.filter(
-    ({ type: _type }) => _type === "CARD"
-  );
-  const favoritedCurses = FavoritedCardsHandler.cards.filter(
-    ({ type: _type }) => _type === "CURSE"
-  );
+  const cards = favoritedCards.filter(({ type }) => type === "CARD");
+  const curses = favoritedCards.filter(({ type }) => type === "CURSE");
+  const tools = favoritedCards.filter(({ type }) => type === "TOOL");
+  const runes = favoritedCards.filter(({ type }) => type === "RUNE");
+  const charms = favoritedCards.filter(({ type }) => type === "CHARM");
 
   return (
     <div className="container5" id={theme}>
@@ -40,28 +44,129 @@ export function PageFavorite() {
         <HeaderTop />
         <ComponentNav favorites="select-menu" />
         <div className="container-main" id={theme}>
-          <div className="backgrundp1">
-            {favoritedCards.length > 0 ? (
+          <div className="backgrundp1" id="background-favorite">
+            {cards.length > 0 ? (
               <div className="favorite-cards">
-                <h1>{favoritedCards.length} Cards</h1>
-                {FavoritedCardsHandler.cards.map(({ id: _id, type: _type }) => {
-                  if (_type !== "CARD") return;
-                  const [card] = cardAxies.filter(
-                    ({ id }) => id === _id
+                <h1>
+                  {cards.length > 1
+                    ? `${cards.length} Cards`
+                    : `${cards.length} Card`}
+                </h1>
+                {cards.map(({ id: $id }) => {
+                  const [cardData] = CardAxies.filter(
+                    ({ id }) => id === $id
                   ) as any;
-                  return <CardAxie onClick={(e) => {}} key={_id} {...card} />;
+
+                  return (
+                    <CardAxie
+                      onClick={() => {
+                        toggleFavorite(cardData, "CARD");
+                        setFavoritedCards(FavoritedCardsHandler.cards);
+                      }}
+                      key={$id}
+                      {...cardData}
+                    />
+                  );
                 })}
               </div>
             ) : null}
-            {favoritedCurses.length > 0 ? (
+            {curses.length > 0 ? (
               <div className="favorite-cards">
-                <h1>{favoritedCurses.length} Curses</h1>
-                {FavoritedCardsHandler.cards.map(({ id: _id, type: _type }) => {
-                  if (_type !== "CURSE") return;
-                  const [card] = cardCurses.filter(
-                    ({ id }) => id === _id
+                <h1>
+                  {curses.length > 1
+                    ? `${curses.length} Curses`
+                    : `${curses.length} Curse`}
+                </h1>
+                {curses.map(({ id: $id }) => {
+                  const [cardData] = CardCurses.filter(
+                    ({ id }) => id === $id
                   ) as any;
-                  return <CardCurse key={_id} {...card} />;
+
+                  return (
+                    <CardCurse
+                      onClick={() => {
+                        toggleFavorite(cardData, "CURSE");
+                        setFavoritedCards(FavoritedCardsHandler.cards);
+                      }}
+                      key={$id}
+                      {...cardData}
+                    />
+                  );
+                })}
+              </div>
+            ) : null}
+            {tools.length > 0 ? (
+              <div className="favorite-cards">
+                <h1>
+                  {tools.length > 1
+                    ? `${tools.length} Tools`
+                    : `${tools.length} Tool`}
+                </h1>
+                {tools.map(({ id: $id }) => {
+                  const [cardData] = CardTools.filter(
+                    ({ id }) => id === $id
+                  ) as any;
+
+                  return (
+                    <CardTool
+                      onClick={() => {
+                        toggleFavorite(cardData, "TOOL");
+                        setFavoritedCards(FavoritedCardsHandler.cards);
+                      }}
+                      key={$id}
+                      {...cardData}
+                    />
+                  );
+                })}
+              </div>
+            ) : null}
+            {runes.length > 0 ? (
+              <div className="favorite-runes">
+                <h1>
+                  {runes.length > 1
+                    ? `${runes.length} Runes`
+                    : `${runes.length} Rune`}
+                </h1>
+                {runes.map(({ id: $id }) => {
+                  const [cardData] = CardRunes.filter(
+                    ({ id }) => id === $id
+                  ) as any;
+
+                  return (
+                    <CardRune
+                      onClick={() => {
+                        toggleFavorite(cardData, "RUNE");
+                        setFavoritedCards(FavoritedCardsHandler.cards);
+                      }}
+                      key={$id}
+                      {...cardData}
+                    />
+                  );
+                })}
+              </div>
+            ) : null}
+            {charms.length > 0 ? (
+              <div className="favorite-runes">
+                <h1>
+                  {charms.length > 1
+                    ? `${charms.length} Charms`
+                    : `${charms.length} Charm`}
+                </h1>
+                {charms.map(({ id: $id }) => {
+                  const [cardData] = CardCharms.filter(
+                    ({ id }) => id === $id
+                  ) as any;
+
+                  return (
+                    <CardCharm
+                      onClick={() => {
+                        toggleFavorite(cardData, "CHARM");
+                        setFavoritedCards(FavoritedCardsHandler.cards);
+                      }}
+                      key={$id}
+                      {...cardData}
+                    />
+                  );
                 })}
               </div>
             ) : null}

@@ -14,6 +14,8 @@ import { ComponentNav } from "../components/Nav/ComponentNav";
 import { HeaderTop } from "../components/Header/HeaderTop";
 import { ThemeContext } from "../App";
 
+import { toggleFavorite } from "../modules/CardFavoriteHandler";
+
 export function PageCurse() {
   const [axieNameSearch, setAxieNameSearch] = useState("");
   const [listFormat, setListFormat] = useState("az");
@@ -86,7 +88,11 @@ export function PageCurse() {
             </div>
             <div className="backgroundp2">
               {filteredCurseCards.map((card: TCurse) => (
-                <CardCurse key={card.id} {...card} />
+                <CardCurse
+                  onClick={() => toggleFavorite(card, "CURSE")}
+                  key={card.id}
+                  {...card}
+                />
               ))}
             </div>
           </div>

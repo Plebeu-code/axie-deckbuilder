@@ -14,6 +14,8 @@ import { ThemeContext } from "../App";
 import type { TCharm } from "../types";
 import { CardCharm } from "../components/CardCharm";
 
+import { toggleFavorite } from "../modules/CardFavoriteHandler";
+
 export function PageCharm() {
   const [rarityRuneSearch, setRarityRuneSearch] = useState("");
   const [axieNameSearch, setAxieNameSearch] = useState("");
@@ -110,7 +112,11 @@ export function PageCharm() {
             </div>
             <div className="backgroundp2" id="grid-space">
               {JsonCharms.map((card: TCharm) => (
-                <CardCharm key={card.id} {...card} />
+                <CardCharm
+                  onClick={() => toggleFavorite(card, "CHARM")}
+                  key={card.id}
+                  {...card}
+                />
               ))}
             </div>
           </div>

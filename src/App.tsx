@@ -12,7 +12,6 @@ import { PageFavorite } from "./pages/PageFavorite";
 import { useState } from "react";
 
 import { FavoritedCardsHandler } from "./modules/CardFavoriteHandler";
-import { pageFavoriteHandler } from "./modules/PageFavoriteHandler";
 
 import LanguageHandler from "./modules/LanguageHandler";
 
@@ -21,10 +20,6 @@ let themeCache: "light" | "dark" | undefined = window.localStorage.getItem(
 ) as any;
 
 export const ThemeContext = React.createContext(null);
-export const PageFavoriteContext = React.createContext({
-  favorites: pageFavoriteHandler.data,
-  toggleFavorites: () => {},
-});
 
 export default function App() {
   const [theme, setTheme] = useState(themeCache);

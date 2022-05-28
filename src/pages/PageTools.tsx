@@ -15,6 +15,8 @@ import { TTool } from "../types";
 
 import { CardTool } from "../components/CardTool";
 
+import { toggleFavorite } from "../modules/CardFavoriteHandler";
+
 export function PageTool() {
   const [toolNameSearch, setToolNameSearch] = useState("");
   const [listFormat, setListFormat] = useState("az");
@@ -88,7 +90,11 @@ export function PageTool() {
             </div>
             <div className="backgroundp2">
               {filteredCurseCards.map((card: TTool) => (
-                <CardTool key={card.id} {...card} />
+                <CardTool
+                  onClick={() => toggleFavorite(card, "TOOL")}
+                  key={card.id}
+                  {...card}
+                />
               ))}
             </div>
           </div>

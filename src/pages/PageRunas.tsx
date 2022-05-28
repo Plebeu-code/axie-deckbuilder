@@ -15,6 +15,8 @@ import type { TTool } from "../types";
 
 import { CardRune } from "../components/CardRuna";
 
+import { toggleFavorite } from "../modules/CardFavoriteHandler";
+
 export function PageRunas() {
   const [runeNameSearch, setRuneNameSearch] = useState("");
   const [runeClassNameSearch, setRuneClassNameSearch] = useState("");
@@ -136,7 +138,11 @@ export function PageRunas() {
             </div>
             <div className="backgroundp2" id="grid-space">
               {filteredRuneCards.map((card: TTool) => (
-                <CardRune key={card.id} {...card} />
+                <CardRune
+                  onClick={() => toggleFavorite(card, "RUNE")}
+                  key={card.id}
+                  {...card}
+                />
               ))}
             </div>
           </div>

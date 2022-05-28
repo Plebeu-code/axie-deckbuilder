@@ -1,4 +1,3 @@
-
 export type TCurse = {
   name: string;
   id: number;
@@ -8,10 +7,11 @@ export type TCurse = {
   status: Status | undefined;
   bodyPart: BodyPart | undefined;
   class: BodyPart | undefined;
-  tags: BodyPart[] | undefined ;
+  tags: BodyPart[] | undefined;
   cardStyle: CardStyle;
   keyWordType: KeyWordType[];
-}
+  onClick?: () => void;
+};
 
 interface KeyWordType {
   keyWord: string;

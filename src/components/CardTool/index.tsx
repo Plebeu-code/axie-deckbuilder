@@ -2,10 +2,7 @@ import "../../style/card.scss";
 import frameEnergy from "../../assets/img/frame-energy.png";
 import energyIcon from "../../assets/img/energy-icon.png";
 import parse from "html-react-parser";
-import {
-  FavoritedCardsHandler,
-  toggleFavorite,
-} from "../../modules/CardFavoriteHandler";
+import { FavoritedCardsHandler } from "../../modules/CardFavoriteHandler";
 
 import type { TTool } from "../../types";
 
@@ -13,7 +10,7 @@ export function CardTool(card: TTool) {
   return (
     <div className="box-card-root">
       <div className="box-card-sub-root">
-        <div className="box-card" onClick={() => toggleFavorite(card, "TOOL")}>
+        <div className="box-card" onClick={card.onClick}>
           <div
             className={
               FavoritedCardsHandler.contains({

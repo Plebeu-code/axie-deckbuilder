@@ -10,6 +10,7 @@ export type TTool = {
   tags: BodyPart[] | undefined;
   cardStyle: CardStyle;
   keyWordType: KeyWordType[] | undefined;
+  onClick?: () => void;
 }
 
 interface KeyWordType {

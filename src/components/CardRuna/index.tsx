@@ -1,6 +1,5 @@
 import {
-  FavoritedCardsHandler,
-  toggleFavorite,
+  FavoritedCardsHandler
 } from "../../modules/CardFavoriteHandler";
 import "./style.scss";
 
@@ -9,10 +8,7 @@ import { TTool } from "../../types";
 export function CardRune(card: TTool) {
   return (
     <div className="card-box-runa">
-      <div
-        className="card-box-root"
-        onClick={() => toggleFavorite(card, "RUNE")}
-      >
+      <div className="card-box-root" onClick={card.onClick}>
         <div
           className={
             FavoritedCardsHandler.contains({

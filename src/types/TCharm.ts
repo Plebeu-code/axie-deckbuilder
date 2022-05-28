@@ -10,6 +10,7 @@ export type TCharm = {
   tags: BodyPart[];
   cardStyle: CardStyle;
   keyWordType: KeyWordType[];
+  onClick?: () => void;
 }
 
 interface KeyWordType {

@@ -10,6 +10,7 @@ export type TRuna = {
   tags: BodyPart[] | undefined;
   cardStyle: CardStyle | undefined;
   keyWordType: KeyWordType[] | undefined;
+  onClick?: () => void;
 }
 
 interface KeyWordType {

@@ -1,5 +1,3 @@
-import { pageFavoriteHandler } from "./PageFavoriteHandler";
-
 export enum ECardTypes {
   "CARD",
   "CURSE",

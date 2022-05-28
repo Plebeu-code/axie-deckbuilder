@@ -100,6 +100,11 @@ $color-main-menu-text: rgba(13, 4, 4, 0.267);
           }
         }
       }
+
+      #background-favorite {
+        padding-bottom: 90px;
+      }
+      
       .backgrundp1 {
         background-color: $color-main-background;
         height: 90%;
@@ -116,9 +121,38 @@ $color-main-menu-text: rgba(13, 4, 4, 0.267);
         min-height: 1400px;
         box-shadow: rgba(197, 193, 193, 0.35) 5px 10px 20px;
 
+        .favorite-runes {
+          margin-left: 4%;
+          margin-top: 7%;
+          padding-top: 4rem;
+          display: grid;
+          max-width: 95%;
+          position: relative;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 0fr));
+          height: auto;
+          justify-content: center;
+          width: 100%;
+          grid-row-gap: 70px;
+
+          > h1 {
+            position: absolute;
+            top: -21px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(27, 16, 126);
+            padding: 5px 40px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.35);
+            box-shadow: 0 8px 32px 0 rgba(56, 59, 104, 0.37);
+            backdrop-filter: blur(13.5px);
+            -webkit-backdrop-filter: blur(13.5px);
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+          }
+        }
+
         .favorite-cards {
           margin-left: 4%;
-          margin-top: 5%;
+          margin-top: 7%;
           padding-top: 4rem;
           display: grid;
           max-width: 95%;
@@ -130,7 +164,7 @@ $color-main-menu-text: rgba(13, 4, 4, 0.267);
 
           > h1 {
             position: absolute;
-            top: 10px;
+            top: -21px;
             left: 50%;
             transform: translate(-50%, -50%);
             color: rgb(27, 16, 126);

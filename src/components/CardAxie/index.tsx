@@ -4,10 +4,7 @@ import frameEnergy from "../../assets/img/frame-energy.png";
 import energyIcon from "../../assets/img/energy-icon.png";
 import frameOwnerPlate from "../../assets/img/frame-owner-plate.png";
 import parse from "html-react-parser";
-import {
-  toggleFavorite,
-  FavoritedCardsHandler,
-} from "../../modules/CardFavoriteHandler";
+import { FavoritedCardsHandler } from "../../modules/CardFavoriteHandler";
 
 export function CardAxie(card: TCard) {
   return (
