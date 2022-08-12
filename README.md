@@ -1,46 +1,71 @@
-# Getting Started with Create React App
+# BAYZ.GG
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação para auxiliar desenvolvedores.
 
-## Available Scripts
+## Instalando e configurando ambiente
+Siga os passos baixo antes de começarmos:
 
-In the project directory, you can run:
+1. Será necessário puxar as última alterações da aplicação, para isso você precisará ter o <u>[Git](https://git-scm.com/downloads)</u> instalado em seu computador.
 
-### `yarn start`
+2. Configure o seu **Git** clicando [aqui](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. Em seu Visual Studio Code é preciso instalar a extensão Sass para poder ter todo o suporte do Vue3 na hora do desenvolvimento.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4. (Opicional) Para desenvolver o front-end é importante ter a extensão Sass para ter um suporte a syntax, autocomplete e Formatter.
 
-### `yarn test`
+5. Depois de tudo está configurando, vamos botar a mão na massa, crie uma pasta para o seu projeto, e execute as linhas abaixo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Linux: 
+```
+git pull https://github.com/BAYZ-GG/axie-infinity-card-builder.git && npm install
+```
+> Windows (PowerShell):
+```
+git pull https://github.com/BAYZ-GG/axie-infinity-card-builder.git | npm install
+```
 
-### `yarn build`
+Pronto, agora você terá o projeto em suas mãos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Rodando localmente
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Entre no diretório do projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  cd axie-infinity-card-builder
+```
 
-### `yarn eject`
+Instale as dependências
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+  pnpm install
+  npm  install
+  yarn install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Inicie o servidor
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+  npm run start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Rodando o preview para testes
 
-## Learn More
+Para rodar os testes, rode o seguinte comando
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  npm run test
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+## Buildando
+Execute o script que estará no **package.json**:
+
+> bash:
+```
+npm run build 
+```
+Na pasta do projeto será gerado um arquivo chamado (build) para produção.
+
+Pronto! Agora você pode começar a trabalhar nas alterações, lembre-se que esse foi um passo-a-passo simples, divirta-se!
